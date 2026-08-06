@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Pritam999 Gaming Store</title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap');
+
+        :root {
+            --primary: #ff0033;
+            --primary-glow: #ff003333;
+            --bg-main: #05070a;
+            --bg-card: rgba(13, 17, 23, 0.7);
+            --ann-bg: #6b6b6b;
+            --ann-text: #ffffff;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: rgba(255, 255, 255, 0.08);
+            --primary-rgb: 255, 0, 51;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Digital Rain */
+        .digital-rain {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background: #000;
+        }
+
+        /* Cosmic Nebula */
+        .cosmic-nebula {
+            position: fixed;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(220, 38, 38, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(30, 64, 175, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            z-index: -2;
+            filter: blur(40px);
+            animation: nebulaMove 30s ease-in-out infinite alternate;
+        }
+
+        @keyframes nebulaMove {
+            0% { transform: scale(1) translate(0, 0); }
+            100% { transform: scale(1.2) translate(2%, 2%); }
+        }
+
+        /* Deep Aurora */
+        .deep-aurora {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(120deg, #05070a 0%, #0d1117 100%);
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .deep-aurora::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, var(--primary-glow) 0%, transparent 40%);
+            opacity: 0.3;
+            animation: auroraMove 20s linear infinite;
+        }
+
+        @keyframes auroraMove {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 3D Searchlight (Torch) */
+        .searchlight-container {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .searchlight-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.92);
+            mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), transparent 80px, black 300px);
+            -webkit-mask-image: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), transparent 80px, black 300px);
+        }
+
+        /* Ticker removed as per request */
+
+
+        .torch-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(var(--primary-rgb), 0.15) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            left: var(--mouse-x, 50%);
+            top: var(--mouse-y, 50%);
+            pointer-events: none;
+        }
+
+        /* Cyber Sphere (Pure 3D) */
+        .cyber-sphere {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background: #05070a;
+        }
+
+        /* Space Dust */
+        .space-dust {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background: #000;
+        }
+
+        .bg-glow {
+            position: fixed;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(80px);
+            animation: pulseGlow 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            from { transform: scale(1); opacity: 0.5; }
+            to { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 440px;
+            padding: 2.5rem;
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 10;
+        }
+
+            pointer-events: none;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 1.5rem;
+                border-radius: 12px;
+                max-width: 92%;
+            }
+            h2 { font-size: 1.5rem; }
+        }
+
+        .logo-section { text-align: center; margin-bottom: 2rem; }
+        
+        .logo-icon {
+            display: inline-flex;
+            background: var(--primary);
+            padding: 10px;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        h2 { font-family: 'Outfit', sans-serif; font-size: 1.75rem; color: #fff; margin-bottom: 0.5rem; }
+        p.subtitle { color: #cbd5e1; font-size: 0.9375rem; }
+
+        .form-group { margin-bottom: 1.5rem; }
+        label { display: block; color: #cbd5e1; font-size: 0.875rem; margin-bottom: 0.5rem; font-weight: 500; }
+
+        .input-wrapper { position: relative; }
+        .input-wrapper svg { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; transition: 0.3s; }
+
+        .form-input {
+            width: 100%;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1rem 0.75rem 2.75rem;
+            color: #fff;
+            font-size: 0.9375rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255,255,255,0.05);
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .form-input:focus + svg { color: var(--primary); }
+
+        .btn-login {
+            width: 100%;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 0.875rem;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btn-login:hover {
+            background: #ef4444;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px var(--primary-glow);
+        }
+
+        .btn-google {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            border: 1px solid var(--border);
+            padding: 0.875rem;
+            border-radius: 10px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            transition: 0.3s;
+            margin-top: 1rem;
+            font-size: 0.9375rem;
+        }
+
+        .btn-google:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 1.5rem 0;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .divider:not(:empty)::before { margin-right: 1rem; }
+        .divider:not(:empty)::after { margin-left: 1rem; }
+
+        .error-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links { text-align: center; margin-top: 1.5rem; font-size: 0.875rem; color: var(--text-muted); }
+        .footer-links a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        .footer-links a:hover { text-decoration: underline; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-up { animation: fadeIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+    </style>
+</head>
+<body>
+    
+<style>
+    body { background-color: #05070a !important; }
+    canvas { background: transparent !important; } 
+    #neural-bg-video {
+        position: fixed; inset: 0; width: 100vw; height: 100vh;
+        object-fit: cover; z-index: -15; opacity: 0.6;
+        pointer-events: none; transition: opacity 2s ease; background: #05070a;
+    }
+</style>
+
+    <video id="neural-bg-video" autoplay loop muted playsinline preload="auto">
+        <source src="assets/video/video_1782830065.mp4" type="video/mp4">
+    </video>
+    <script>
+        (function() {
+            const vid = document.getElementById('neural-bg-video');
+            vid.style.opacity = '0.6';
+            const activate = () => { if (vid.paused) vid.play().catch(e => {}); };
+            ['click', 'touchstart', 'scroll'].forEach(evt => window.addEventListener(evt, activate, { once: true }));
+        })();
+    </script>
+
+
+<!-- GLOBAL PREMIUM MUSIC HUB v3.1 (HARD-CODED) -->
+<style>
+    #neural-sync-v3 {
+        position: fixed; bottom: 30px; left: 30px; z-index: 999999999 !important;
+        background: rgba(13, 17, 23, 0.9); backdrop-filter: blur(25px) saturate(180%);
+        border: 2px solid rgba(255,255,255,0.15); border-radius: 50px;
+        padding: 12px 25px; display: flex !important; align-items: center; gap: 15px;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.8), 0 0 30px rgba(255, 0, 51, 0.4);
+        transition: all 0.4s ease; font-family: 'Outfit', sans-serif; opacity: 1 !important; visibility: visible !important;
+    }
+    .sync-btn { background: none; border: none; color: #fff; cursor: pointer; display: flex; transition: 0.3s; }
+    .sync-slider { -webkit-appearance: none; width: 110px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 5px; outline: none; }
+    .sync-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: #fff; border: 3px solid #ff0033; cursor: pointer; }
+    </style>
+
+<div id="neural-sync-v3">
+    <button id="v3-play-btn" class="sync-btn" style="filter: drop-shadow(0 0 8px #ff0033);">
+        <span id="v3-icon-wrap"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+    </button>
+    <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.15);"></div>
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+        <div style="display: flex; justify-content: space-between; width: 110px;">
+            <span style="font-size: 0.7rem; color: #94a3b8; font-weight: 800; text-transform: uppercase;">Volume</span>
+            <span id="v3-vol-txt" style="font-size: 0.7rem; color: #ff0033; font-weight: 800;">80%</span>
+        </div>
+        <input type="range" id="v3-range" class="sync-slider" min="0" max="1" step="0.01" value="0.8">
+    </div>
+</div>
+
+<script>
+(function() {
+    const audioUrl = '';
+    
+    // --- AUDIO ENGINE INITIALIZATION ---
+    const initAudio = () => {
+        if (window.bgAudio) return;
+
+        if (audioUrl) {
+            // Priority 1: Dedicated Music URL
+            window.bgAudio = new Audio(audioUrl);
+            window.bgAudio.loop = true;
+            window.bgAudio.volume = localStorage.getItem('bg_audio_vol') || 0.8;
+            if (localStorage.getItem('bg_audio_pos')) window.bgAudio.currentTime = localStorage.getItem('bg_audio_pos');
+            window.bgAudio.load();
+        } else {
+            // Priority 2: Fallback to Background Video
+            const vid = document.getElementById('neural-bg-video');
+            if (vid) {
+                window.bgAudio = vid;
+                window.bgAudio.volume = localStorage.getItem('bg_audio_vol') || 0.8;
+            }
+        }
+    };
+
+    initAudio();
+    const audio = window.bgAudio;
+    const playIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
+    const pauseIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+
+    const syncUI = () => {
+        if (!audio) return;
+        const wrap = document.getElementById('v3-icon-wrap');
+        const volTxt = document.getElementById('v3-vol-txt');
+        const range = document.getElementById('v3-range');
+        if (wrap) wrap.innerHTML = audio.paused ? playIcon : pauseIcon;
+        if (volTxt) volTxt.innerText = Math.round(audio.volume * 100) + '%';
+        if (range) {
+            range.value = audio.volume;
+            const v = audio.volume * 100;
+            range.style.background = `linear-gradient(to right, #ff0033 ${v}%, rgba(255,255,255,0.1) ${v}%)`;
+        }
+    };
+
+    if (audio) {
+        document.getElementById('v3-play-btn').onclick = (e) => {
+            e.stopPropagation(); 
+            if (audio.paused) audio.play(); else audio.pause(); 
+            if (audio.id === 'neural-bg-video') audio.muted = false; // Unmute if video
+            syncUI();
+        };
+        document.getElementById('v3-range').oninput = (e) => {
+            audio.volume = e.target.value; 
+            if (audio.id === 'neural-bg-video' && audio.volume > 0) audio.muted = false;
+            syncUI();
+        };
+        
+        const unlock = () => { 
+            initAudio(); // Re-check if somehow lost
+            if (audio.id === 'neural-bg-video') audio.muted = false;
+            if (audio.paused) audio.play().catch(()=>{}); 
+            if (typeof connectAudio === 'function') connectAudio(); 
+            syncUI(); 
+            ['click','touchstart'].forEach(ev => document.removeEventListener(ev, unlock));
+        };
+        ['click','touchstart'].forEach(ev => document.addEventListener(ev, unlock));
+
+        setInterval(() => {
+            if (audio.currentTime > 0) {
+                localStorage.setItem('bg_audio_pos', audio.currentTime);
+                localStorage.setItem('bg_audio_vol', audio.volume);
+            }
+            syncUI();
+        }, 1000);
+        syncUI();
+    } else {
+        document.getElementById('v3-vol-txt').innerText = "OFF";
+        document.getElementById('v3-range').disabled = true;
+    }
+})();
+</script>
+    <div class="bg-glow" style="top: -10%; right: -10%;"></div>
+    <div class="bg-glow" style="bottom: -10%; left: -10%; animation-delay: -5s;"></div>
+
+    <div class="login-container animate-up">
+        <div class="logo-section">
+            <a href="index.php" style="text-decoration: none;">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <h1 style="color: #fff; font-family: 'Outfit'; font-size: 1.5rem;">PRITAM<span style="color: var(--primary);">999</span></h1>
+            </a>
+            <h2 style="margin-top: 1rem;">Welcome Back</h2>
+            <p class="subtitle">Securely log in to your account</p>
+        </div>
+
+        
+        
+        
+        <form method="POST">
+            <input type="hidden" name="csrf_token" value="27ae5908bf3bd74fea42511d71036768aebb3e9a6ae69f727402f95fe4f17eab">
+            
+            <div class="form-group">
+                <label>Username</label>
+                <div class="input-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <input type="text" name="username" class="form-input" placeholder="Enter your username" required autocomplete="off">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <label style="margin-bottom: 0;">Password</label>
+                    <a href="#" style="color: var(--primary); font-size: 0.75rem; text-decoration: none; font-weight: 500;">Forgot?</a>
+                </div>
+                <div class="input-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <input type="password" name="password" class="form-input" placeholder="••••••••" required>
+                </div>
+            </div>
+
+            <div class="form-group" style="display: flex; justify-content: center; margin: 1rem 0;">
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAADMaQnxJ0m4m1gi5" data-theme="dark"></div>
+            </div>
+
+            <button type="submit" class="btn-login">
+                <span>Sign In to Store</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+        </form>
+
+        <div class="divider">Or continue with</div>
+
+        <button type="button" class="btn-google" id="google-login-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 488 512" fill="white"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+            <span>Login with Google</span>
+        </button>
+
+        <div class="footer-links">
+            Don't have an account? <a href="register.php">Create Free Account</a>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyB2quuWBr28oOMvsZMMHsrfHHtN-YNkvb0",
+            authDomain: "terminalx999-auth.firebaseapp.com",
+            projectId: "terminalx999-auth",
+            storageBucket: "terminalx999-auth.firebasestorage.app",
+            messagingSenderId: "352883761069",
+            appId: "1:352883761069:web:c1821c486f82bcc506cb24",
+            measurementId: "G-GQY2ECGGHY"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+
+        const googleBtn = document.getElementById('google-login-btn');
+        if (googleBtn) {
+            googleBtn.addEventListener('click', async () => {
+                const originalText = googleBtn.innerHTML;
+                googleBtn.innerHTML = '<span>Processing...</span>';
+                googleBtn.disabled = true;
+
+                try {
+                    const result = await signInWithPopup(auth, provider);
+                    const user = result.user;
+                    
+                    const response = await fetch('auth_google.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            uid: user.uid,
+                            email: user.email,
+                            displayName: user.displayName,
+                            photoURL: user.photoURL
+                        })
+                    });
+
+                    const data = await response.json();
+                    if (data.success) {
+                        if (data.requires_2fa) {
+                            window.location.href = 'verify_2fa.php';
+                        } else {
+                            window.location.href = 'index.php';
+                        }
+                    } else {
+                        alert(data.message || 'Login failed');
+                        googleBtn.innerHTML = originalText;
+                        googleBtn.disabled = false;
+                    }
+                } catch (error) {
+                    console.error(error);
+                    alert('Google login failed: ' + error.message);
+                    googleBtn.innerHTML = originalText;
+                    googleBtn.disabled = false;
+                }
+            });
+        }
+    </script>
+    <script>
+        /* Protection */
+        document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
+<script src="assets/js/shield.js?v=1783962362"></script></body>
+</html>

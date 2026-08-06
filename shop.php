@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace | PRITAM 999</title>
+    <meta name="description"
+        content="Explore the elite collection of gaming assets and accounts at PRITAM 999. The most brutal selections for top-tier dominance.">
+    <meta name="keywords"
+        content="PC PANEL, ANDROID PANEL, FREE FIRE ID, Mystery Box, 𝗶𝗢𝗦 𝗣𝗔𝗡𝗘𝗟, PC GAME PANEL, PRITAM 999, Free Fire Cheats, Elite Gaming Store, Mod Menu">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title"
+        content="Marketplace | PRITAM 999">
+    <meta property="og:description"
+        content="Secure your tactical advantage with the latest gaming enhancements.">
+    <meta property="og:image" content="assets/img/og-preview.png">
+    <link rel="canonical" href="https://pritam999.shop/shop.php">
+    <link rel="stylesheet" href="assets/css/core.css?v=1.0.7">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary:
+                #ff0033            ;
+            --primary-light:
+                #ff0033                cc;
+            --ann-text:
+                #ffffff            ;
+        }
+
+        .navbar-links {
+            gap: 1.5rem !important;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            object-fit: cover;
+        }
+
+        .user-default-icon {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px;
+            border-radius: 50%;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+        }
+
+        /* Premium Sale Badge Pulse Animation */
+        @keyframes pulse-sale {
+            0% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.1); filter: brightness(1.3); box-shadow: 0 0 25px rgba(255, 75, 43, 0.7); }
+            100% { transform: scale(1); filter: brightness(1); }
+        }
+        .animate-pulse-sale {
+            animation: pulse-sale 2s infinite ease-in-out;
+        }
+
+        /* Animated Price Cut */
+        @keyframes cut-line {
+            0%, 10% { width: 0; }
+            40%, 90% { width: 100%; }
+            100% { width: 0; }
+        }
+        .price-cut-animate {
+            position: relative;
+            display: inline-block;
+            text-decoration: none !important;
+        }
+        .price-cut-animate::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 2px;
+            background: #ef4444;
+            transform: translateY(-50%);
+            animation: cut-line 2s infinite ease-in-out;
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+        }
+        .offer-label {
+            font-size: 0.55rem;
+            font-weight: 900;
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 1px 4px;
+            border-radius: 3px;
+            margin-left: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            vertical-align: middle;
+        }
+
+        /* Responsive Overrides */
+        @media (max-width: 1024px) {
+            .grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid-gap-8 {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .grid-cols-4 {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar-links {
+                display: none;
+            }
+
+            .navbar-container {
+                justify-content: space-between;
+                padding: 0 0.75rem;
+            }
+
+            .navbar-logo-text {
+                font-size: 0.9rem;
+            }
+
+            .navbar-actions {
+                gap: 0.4rem;
+            }
+
+            .btn {
+                padding: 0.4rem 0.6rem;
+                font-size: 0.75rem;
+            }
+
+            .section-padding {
+                padding: 2rem 0;
+            }
+
+            .footer .flex.justify-between {
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+
+            .footer .flex.gap-32 {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+<style>
+    body { background-color: #05070a !important; }
+    canvas { background: transparent !important; } 
+    #neural-bg-video {
+        position: fixed; inset: 0; width: 100vw; height: 100vh;
+        object-fit: cover; z-index: -15; opacity: 0.6;
+        pointer-events: none; transition: opacity 2s ease; background: #05070a;
+    }
+</style>
+
+    <video id="neural-bg-video" autoplay loop muted playsinline preload="auto">
+        <source src="assets/video/video_1782830065.mp4" type="video/mp4">
+    </video>
+    <script>
+        (function() {
+            const vid = document.getElementById('neural-bg-video');
+            vid.style.opacity = '0.6';
+            const activate = () => { if (vid.paused) vid.play().catch(e => {}); };
+            ['click', 'touchstart', 'scroll'].forEach(evt => window.addEventListener(evt, activate, { once: true }));
+        })();
+    </script>
+
+
+<!-- GLOBAL PREMIUM MUSIC HUB v3.1 (HARD-CODED) -->
+<style>
+    #neural-sync-v3 {
+        position: fixed; bottom: 30px; left: 30px; z-index: 999999999 !important;
+        background: rgba(13, 17, 23, 0.9); backdrop-filter: blur(25px) saturate(180%);
+        border: 2px solid rgba(255,255,255,0.15); border-radius: 50px;
+        padding: 12px 25px; display: flex !important; align-items: center; gap: 15px;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.8), 0 0 30px rgba(255, 0, 51, 0.4);
+        transition: all 0.4s ease; font-family: 'Outfit', sans-serif; opacity: 1 !important; visibility: visible !important;
+    }
+    .sync-btn { background: none; border: none; color: #fff; cursor: pointer; display: flex; transition: 0.3s; }
+    .sync-slider { -webkit-appearance: none; width: 110px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 5px; outline: none; }
+    .sync-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: #fff; border: 3px solid #ff0033; cursor: pointer; }
+    </style>
+
+<div id="neural-sync-v3">
+    <button id="v3-play-btn" class="sync-btn" style="filter: drop-shadow(0 0 8px #ff0033);">
+        <span id="v3-icon-wrap"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+    </button>
+    <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.15);"></div>
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+        <div style="display: flex; justify-content: space-between; width: 110px;">
+            <span style="font-size: 0.7rem; color: #94a3b8; font-weight: 800; text-transform: uppercase;">Volume</span>
+            <span id="v3-vol-txt" style="font-size: 0.7rem; color: #ff0033; font-weight: 800;">80%</span>
+        </div>
+        <input type="range" id="v3-range" class="sync-slider" min="0" max="1" step="0.01" value="0.8">
+    </div>
+</div>
+
+<script>
+(function() {
+    const audioUrl = '';
+    
+    // --- AUDIO ENGINE INITIALIZATION ---
+    const initAudio = () => {
+        if (window.bgAudio) return;
+
+        if (audioUrl) {
+            // Priority 1: Dedicated Music URL
+            window.bgAudio = new Audio(audioUrl);
+            window.bgAudio.loop = true;
+            window.bgAudio.volume = localStorage.getItem('bg_audio_vol') || 0.8;
+            if (localStorage.getItem('bg_audio_pos')) window.bgAudio.currentTime = localStorage.getItem('bg_audio_pos');
+            window.bgAudio.load();
+        } else {
+            // Priority 2: Fallback to Background Video
+            const vid = document.getElementById('neural-bg-video');
+            if (vid) {
+                window.bgAudio = vid;
+                window.bgAudio.volume = localStorage.getItem('bg_audio_vol') || 0.8;
+            }
+        }
+    };
+
+    initAudio();
+    const audio = window.bgAudio;
+    const playIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
+    const pauseIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+
+    const syncUI = () => {
+        if (!audio) return;
+        const wrap = document.getElementById('v3-icon-wrap');
+        const volTxt = document.getElementById('v3-vol-txt');
+        const range = document.getElementById('v3-range');
+        if (wrap) wrap.innerHTML = audio.paused ? playIcon : pauseIcon;
+        if (volTxt) volTxt.innerText = Math.round(audio.volume * 100) + '%';
+        if (range) {
+            range.value = audio.volume;
+            const v = audio.volume * 100;
+            range.style.background = `linear-gradient(to right, #ff0033 ${v}%, rgba(255,255,255,0.1) ${v}%)`;
+        }
+    };
+
+    if (audio) {
+        document.getElementById('v3-play-btn').onclick = (e) => {
+            e.stopPropagation(); 
+            if (audio.paused) audio.play(); else audio.pause(); 
+            if (audio.id === 'neural-bg-video') audio.muted = false; // Unmute if video
+            syncUI();
+        };
+        document.getElementById('v3-range').oninput = (e) => {
+            audio.volume = e.target.value; 
+            if (audio.id === 'neural-bg-video' && audio.volume > 0) audio.muted = false;
+            syncUI();
+        };
+        
+        const unlock = () => { 
+            initAudio(); // Re-check if somehow lost
+            if (audio.id === 'neural-bg-video') audio.muted = false;
+            if (audio.paused) audio.play().catch(()=>{}); 
+            if (typeof connectAudio === 'function') connectAudio(); 
+            syncUI(); 
+            ['click','touchstart'].forEach(ev => document.removeEventListener(ev, unlock));
+        };
+        ['click','touchstart'].forEach(ev => document.addEventListener(ev, unlock));
+
+        setInterval(() => {
+            if (audio.currentTime > 0) {
+                localStorage.setItem('bg_audio_pos', audio.currentTime);
+                localStorage.setItem('bg_audio_vol', audio.volume);
+            }
+            syncUI();
+        }, 1000);
+        syncUI();
+    } else {
+        document.getElementById('v3-vol-txt').innerText = "OFF";
+        document.getElementById('v3-range').disabled = true;
+    }
+})();
+</script>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="index.php" class="navbar-brand">
+                <div class="navbar-logo-icon">
+                    <i data-lucide="shield-check" style="width: 16px;"></i>
+                </div>
+                <span class="navbar-logo-text">PRITAM<span style="color: var(--primary);">999</span></span>
+            </a>
+            <div class="navbar-divider"></div>
+            <!-- Links Center -->
+            <div class="navbar-links">
+                                                            <a href="shop.php?type=PC+PANEL"
+                            class="nav-link ">
+                            PC PANEL                        </a>
+                                                                                <a href="shop.php?type=ANDROID+PANEL"
+                            class="nav-link ">
+                            ANDROID PANEL                        </a>
+                                                                                <a href="shop.php?type=FREE+FIRE+ID"
+                            class="nav-link ">
+                            FREE FIRE ID                        </a>
+                                                                                <a href="shop.php?type=Mystery+Box"
+                            class="nav-link ">
+                            Mystery Box                        </a>
+                                                                                <a href="shop.php?type=%F0%9D%97%B6%F0%9D%97%A2%F0%9D%97%A6+%F0%9D%97%A3%F0%9D%97%94%F0%9D%97%A1%F0%9D%97%98%F0%9D%97%9F"
+                            class="nav-link ">
+                            𝗶𝗢𝗦 𝗣𝗔𝗡𝗘𝗟                        </a>
+                                                                                <a href="shop.php?type=PC+GAME+PANEL"
+                            class="nav-link ">
+                            PC GAME PANEL                        </a>
+                                                </div>
+            <div class="navbar-divider"></div>
+
+            <!-- Actions Right -->
+            <div class="navbar-actions" style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <a href="login.php" class="nav-link" style="margin-right: 0.5rem;">Login</a>
+                    <a href="register.php" class="btn btn-primary" style="padding: 0.4rem 0.8rem;">Get Started</a>
+                            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="section-padding" style="padding-top: 3rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div>
+                <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Marketplace</h1>
+                <p style="color: var(--text-muted);">Explore our full collection of gaming accounts and assets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <!-- Dynamic Category Layout -->
+                            
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+                        <h2
+                            style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary-light);">
+                            PC PANEL</h2>
+                        <div
+                            style="flex-grow: 1; height: 1px; background: linear-gradient(90deg, var(--primary), transparent);">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-8">
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/refs/heads/main/ChatGPT%20Image%20Dec%2024%2C%202025%2C%2003_06_24%20PM.png" alt="TERMINAL X BASIC PC PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766485953433" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        TERMINAL X BASIC PC PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        🛠 SAFE Features • Aimbot Global • Aimbot External • Sniper Switch • Sniper Scope • No Recoil • Glitch Fire • ESP Line Box • ESP Alert • ESP Information Weapon • Auto Refresh • Streamer Mode                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹500</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766485953433" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/refs/heads/main/ChatGPT%20Image%20Dec%2027%2C%202025%2C%2001_55_18%20AM.png" alt="TERMINAL X 999 AIM SILENT EXE"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766486867031" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        TERMINAL X 999 AIM SILENT EXE</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        🎮 EXE Function • Aim Silent 360° • Aimbot Internal (Range / Hex) • Aim Silent Lite • AimFov 999° • Ignore Knock • No Recoil • UP Player While Firing • Teleport Mode • Teleport Mode • Ghost Mode • Shake Kill • Freeze Kill • Under Kill • Fast Fire • No Reload • Speed Mode Joystick Shifter • ESP Line Box Info • ESP Skeleton • ESP Mini Map Weapon • Hot Key • Streamer Mode • Rank Working                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹100</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766486867031" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/refs/heads/main/ChatGPT%20Image%20Dec%2027%2C%202025%2C%2001_55_22%20AM.png" alt="TERMINAL X 999 EMULATOR BYPASS"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766487129260" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        TERMINAL X 999 EMULATOR BYPASS</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📍 Note : If you want to bypass the emulator logo, you’ll need to purchase it separately. This feature allows you to play CS Rank and BR Rank matches, and it ensures matchmaking with mobile players for a seamless gaming experience.                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹450</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766487129260" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/PRITAM-999/blob/main/ChatGPT%20Image%20May%2010,%202026,%2012_14_37%20PM.png?raw=true" alt="EXTERNAL PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a002831e8c526.21027445" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    37 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        EXTERNAL PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹200</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a002831e8c526.21027445" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/fe522bd25944fef03e84090b2d1b9e3f37d5554b/ChatGPT%20Image%20May%2010%2C%202026%2C%2012_36_49%20PM.png" alt="FREE PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a002f51adf878.11477833" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        FREE PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹1</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a002f51adf878.11477833" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/file_0000000022b47206bb7ac83712288887.png?raw=true" alt="BR MOD AIMSILENT EXE"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a3d7da29e92a2.98730759" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        BR MOD AIMSILENT EXE</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹90</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a3d7da29e92a2.98730759" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/file_0000000006187206bbc6438a95dec391.png?raw=true" alt="TERMINAL X 999 VAULT"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a439646768800.35036774" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        TERMINAL X 999 VAULT</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        - Custom login popup
+- Dress changer 
+- All emote option 
+
+Note : You can use any outfit and any emote, even if you don&amp;amp;amp;amp;#039;t own them. Other players will also be able to see your outfit and emotes in-game.                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹70</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a439646768800.35036774" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/ChatGPT%20Image%20Jul%201,%202026,%2003_49_10%20AM.png?raw=true" alt="TERMINAL X 999 GROUP BAN TOOL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a4442a6eb11c7.52412706" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    97 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        TERMINAL X 999 GROUP BAN TOOL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        - Grand Master status will be shown.
+- Your ID will be blacklisted within 1 hour.,
+- No penalty will be applied to your account.                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹800</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a4442a6eb11c7.52412706" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+                            
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+                        <h2
+                            style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary-light);">
+                            ANDROID PANEL</h2>
+                        <div
+                            style="flex-grow: 1; height: 1px; background: linear-gradient(90deg, var(--primary), transparent);">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-8">
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/SHOP-PHOTO/refs/heads/main/Picsart_26-02-27_22-08-21-497.jpg" alt="HG CHEAT MOD MENU / INJECTOR"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766528334662" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    136 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        HG CHEAT MOD MENU / INJECTOR</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Aim Silent • Auto Headshot • Aimbot Full • Aim Visible • Aimfov 180 • Fast Speed Mode • Esp Line Location • Cs / Br Rank Working
+
+| Supports – One Key Works On Both Versions
+• Mod Menu (Non-Root Device )
+• Injector (Root Device)                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹90</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766528334662" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/SHOP-PHOTO/refs/heads/main/Picsart_26-01-23_18-59-44-329.png" alt="DRIP CLIENT MOD MENU"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766529749470" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    141 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        DRIP CLIENT MOD MENU</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Silent Aimbot • Aimbot Rage / Legit • Aim Magnet • Speed Timer • Teleport 8M • Up Players • Fly Car • Ghost Mode • Antatu Player • Esp Line Location • 120 FPS Unblock • 🄲🅂 / 🄱🅁 Rank Working                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹80</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766529749470" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/SHOP-PHOTO/refs/heads/main/Picsart_26-01-23_22-20-11-039.png" alt="BR MOD INJECTOR"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766530271879" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    353 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        BR MOD INJECTOR</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function •Silent Aimbot •Auto Headshot • Magnet Player •Fast Speed •Up Player •Telekill •Ghost Mode •Esp Line Location                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹80</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766530271879" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/SHOP-PHOTO/refs/heads/main/Picsart_26-01-23_23-02-44-951.png" alt="𝗛𝗔𝗫𝗫𝗖𝗞𝗘𝗥 𝗣𝗥𝗢 𝗜𝗡𝗝𝗘𝗖𝗧𝗢𝗥"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966002" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    23 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        𝗛𝗔𝗫𝗫𝗖𝗞𝗘𝗥 𝗣𝗥𝗢 𝗜𝗡𝗝𝗘𝗖𝗧𝗢𝗥</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Aimbot Full • Auto Headshot • Headshot Rate • AimFov 500 • Esp Line Location • Streamer Mode • Hide From Screen Capture • CS / BR Rank Working
+
+📍 Best For Root Device
+- Main Account Antiban Safe 100%                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹550</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966002" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-01-24_00-15-16-329.png?raw=true" alt="DRIP CLIENT ROOT INJECTOR"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966007" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    13 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        DRIP CLIENT ROOT INJECTOR</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Silent Aimbot • Aimbot Rage / Legit • Aim Magnet • Speed Timer • Teleport 8M • Up Players • Fly Car • Ghost Mode • Antatu Player • Esp Line Location • 120 FPS Unblock • CS / BR Rank Working                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹80</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966007" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-27_23-08-35-346.png?raw=true" alt="PATO TEAM ORANGE MOD MENU"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966010" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    44 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        PATO TEAM ORANGE MOD MENU</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Aimkill Fire • Rain Kill • Silent Aimbot • Auto Headshot • Aimbot Legit • Aimbot Visible • Aim Magnet • Speed Hack • Teleport Mode • Auto Fire • Up Players • Fly Car • Ghost Mode • Esp Line Location • Optimize Low Device • CS/BR Rank Working
+
+- Orange Version Full Brutal Function.                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹150</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966010" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-27_23-21-53-003.png?raw=true" alt="PATO TEAM BLUE MOD MENU"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966013" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    46 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        PATO TEAM BLUE MOD MENU</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Auto Headshot • Aimbot Legit • Aimbot Visible • Aim Assistant • AimFov 100° • Aimbot All Type Adjustable • Esp Line Location • Optimize Low Device • CS/BR Rank Working
+
+- Blue Version Safe Normal Function.                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹150</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966013" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-27_23-35-43-637.png?raw=true" alt="STRICKS BR INJECTOR"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966015" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    60 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        STRICKS BR INJECTOR</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        524424                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹90</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966015" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/refs/heads/main/Picsart_26-05-27_23-13-44-665.png" alt="PRIME MOD MENU"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a1731b88cd886.76520638" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    38 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        PRIME MOD MENU</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Aim Silent • Auto Headshot • Aimbot Full • Aim Visible • Aimfov 180 • Fast Speed Mode • Esp Line Location • Cs / Br Rank Working                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹80</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a1731b88cd886.76520638" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/Picsart_26-06-08_23-52-27-464.png?raw=true" alt="FLUX CHEATS INJECTOR"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a270a0c83bde0.34310471" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    44 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        FLUX CHEATS INJECTOR</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📝 Function • Silent Aim • Headshot Hack • Aimbot Legit • Aim fov 360° • Aim magnet • Spin Bot • No Reload • UnderKill • Speed Hack • Esp Line Location • 🄲🅂 / 🄱🅁 Rank Working
+
+  | 𝐍𝐎𝐓𝐄 :
+- ʀᴏᴏᴛ ᴅᴇᴠɪᴄᴇ ᴅɪʀᴇᴄᴛ 
+- ɴᴏɴ ʀᴏᴏᴛ • ᴄʟᴏᴜᴅ ᴠɪʀᴛᴜᴀʟ                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹70</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a270a0c83bde0.34310471" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/Picsart_26-06-09_18-09-44-807.png?raw=true" alt="TERMINAL X 999 PHONE"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a2848b13cb6c8.66056754" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        TERMINAL X 999 PHONE</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📝 Function • Auto Eliminate Football Hit • Silent Aim • Headshot Hack • Aimbot Legit • Aim Fov 360° • Aim Magnet • No Reload • UnderKill • Speed Hack • Esp Line Location • 🄲🅂 / 🄱🅁 Rank Working
+
+  | 𝐍𝐎𝐓𝐄 :
+- ʀᴏᴏᴛ ᴅᴇᴠɪᴄᴇ ᴅɪʀᴇᴄᴛ 
+- ɴᴏɴ ʀᴏᴏᴛ • ᴄʟᴏᴜᴅ ᴠɪʀᴛᴜᴀʟ
+
+Note: This product is fully optimized and officially available for Rooted Devices, where it runs smoothly and delivers the best experience.
+Non-Root Device support is currently under testing. For now, Non-Root users can use the product via our Cloud Virtual Environment, which requires a stable internet connection. A dedicated private virtual solution for Non-Root devices is currently in development and will be released soon.                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹140</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a2848b13cb6c8.66056754" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/1023afc43c0142e32bbfbadca795c219dd625a7b/Picsart_26-06-13_04-19-22-950.png" alt="DRIP CLIENT PROXY"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a2c8e0d816ad3.38372845" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    86 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        DRIP CLIENT PROXY</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Aimbot Head • Aimbot Neck • Aimbot Body • Fast Gun Change • Speed Timer • High Jump • 🄲🅂 / 🄱🅁 Rank Working
+
+- best for non root device                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹90</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a2c8e0d816ad3.38372845" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/Picsart_26-06-25_21-50-33-679.png?raw=true" alt="HG CHEATS PROXY"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a3d58ce69f378.74093657" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        HG CHEATS PROXY</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📑 Function • Aimbot Head • Aimbot Neck • Aimbot Body • Bypass AntiCheat • 🄲🅂 / 🄱🅁 Rank Working                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹80</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a3d58ce69f378.74093657" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/082d5e9e35a9f4b73155b5cb42d4c6cd3da75833/Picsart_26-06-26_03-52-59-179.png" alt="EZ TEAM 8 BALL POOL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a3db5eea09e40.03258735" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    29 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        EZ TEAM 8 BALL POOL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹80</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a3db5eea09e40.03258735" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+                            
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+                        <h2
+                            style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary-light);">
+                            FREE FIRE ID</h2>
+                        <div
+                            style="flex-grow: 1; height: 1px; background: linear-gradient(90deg, var(--primary), transparent);">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-8">
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/refs/heads/main/1766617255577.jpg" alt="FACEBOOK LEVEL 8 ID"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966001" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    5 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        FACEBOOK LEVEL 8 ID</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        ❗️ ꜱᴇᴄᴜʀᴇ ᴀᴄᴄᴏᴜɴᴛ
+❗️ ɪɴꜱᴛᴀɴᴛ ᴀᴄᴏᴜɴᴛ ᴅᴇʟɪᴠᴇʀʏ
+❗️ ᴏɴʟʏ ɪɴᴅɪᴀɴ ꜱᴇʀᴠᴇʀ
+
+• ᴄs &amp;amp; ʙʀ ʀᴀɴᴋ sᴜᴘᴘᴏʀᴛᴇᴅ                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹60</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966001" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/PRITAM-999/blob/main/1766617726687.jpg?raw=true" alt="GOOGLE LEVEL 8 ID"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966003" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    1 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        GOOGLE LEVEL 8 ID</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        ❗️ ꜱᴇᴄᴜʀᴇ ᴀᴄᴄᴏᴜɴᴛ
+❗️ ɪɴꜱᴛᴀɴᴛ ᴀᴄᴏᴜɴᴛ ᴅᴇʟɪᴠᴇʀʏ
+❗️ ᴏɴʟʏ ɪɴᴅɪᴀɴ ꜱᴇʀᴠᴇʀ
+
+• ᴄs &amp;amp;amp;amp;amp;amp; ʙʀ ʀᴀɴᴋ sᴜᴘᴘᴏʀᴛᴇᴅ                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹50</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966003" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/PRITAM-999/blob/main/Picsart_25-12-27_03-06-49-005.png?raw=true" alt="LEVEL UP SERVICE"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966006" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        LEVEL UP SERVICE</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        ⚙️ ʟᴇᴠᴇʟ ᴜᴘ ꜱᴇʀᴠɪᴄᴇ 
+🚀 ᴜɴʟɪᴍɪᴛᴇᴅ ʟᴇᴠᴇʟ ɪɴᴄʀᴇᴀꜱᴇ
+🎮 ᴀᴜᴛᴏ ᴘʟᴀʏ | 📜 ɴᴏ ᴍᴀᴛᴄʜ ʜɪꜱᴛᴏʀʏ
+🛡 100% ꜱᴀꜰᴇ – ᴍᴀɪɴ ᴀᴄᴄᴏᴜɴᴛ ᴘʀᴏᴛᴇᴄᴛᴇᴅ                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹999,999</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966006" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+                            
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+                        <h2
+                            style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary-light);">
+                            Mystery Box</h2>
+                        <div
+                            style="flex-grow: 1; height: 1px; background: linear-gradient(90deg, var(--primary), transparent);">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-8">
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/payment-method-logo/refs/heads/main/image_search_1776445243665.jpg" alt="Mystery Box"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966004" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    UNLIMITED
+                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        Mystery Box</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        ⚠️ IMPORTANT ⚠️
+
+This package is only for you.
+
+• Get keys at your price  
+• Sell keys to your clients  
+• Make profit on every sale  
+
+Not for personal use.                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹5,000</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966004" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+                            
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+                        <h2
+                            style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary-light);">
+                            𝗶𝗢𝗦 𝗣𝗔𝗡𝗘𝗟</h2>
+                        <div
+                            style="flex-grow: 1; height: 1px; background: linear-gradient(90deg, var(--primary), transparent);">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-8">
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-26_18-02-49-659.jpg?raw=true" alt="E-SIGN CERTIFICATE"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966011" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    2 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        E-SIGN CERTIFICATE</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        📍Remember, if you are buying this for the first time, then you will have to buy its e sign certificate separately. ( If you already have an e-sign certificate, just buy the iOS panel and play. )
+• Validity : 31 Day 
+• Warranty : 1 MONTH 
+• Price : 600 INR 
+
+📨 If you&amp;amp;amp;amp;amp;#039;re buying for the first time, let me give you an example: The installation process for your E-Sign certificate, which will last for one year, will cost you 1,300, and the 31 validity period will cost you 2,100 for ios panel key. The total will be 3,400.                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹500</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966011" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-26_16-21-16-592.png?raw=true" alt="iPHONE SAFE PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=1766565966012" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(34, 197, 94, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    13 IN STOCK                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        iPHONE SAFE PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                        🀄 function • Silent Aimbot • Aimbot ( Auto Headshot ) • Customize Aim Assistant • Aim Fov 360° • Aim Distance 500° • Esp Line Location All Type • More Extra Misc Function • Stream Mod Proof.
+📍Remember, if you are buying this for the first time, then you will have to buy its e sign certificate separately. ( If you already have e-sign certificate then you can directly buy this iOS panel key, then play )                                    </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹450</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=1766565966012" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/a849c110ae58f28dc208877a86ddc9c3ebb6ab46/Picsart_26-06-30_17-57-58-948.png" alt="MIGUL PRO MONITE IOS PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a43b9c20a9450.59980640" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        MIGUL PRO MONITE IOS PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹400</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a43b9c20a9450.59980640" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/a849c110ae58f28dc208877a86ddc9c3ebb6ab46/Picsart_26-06-30_18-00-56-640.png" alt="MIGUL BASIC MONITE IOS PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a43ba92cb2a08.78169700" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        MIGUL BASIC MONITE IOS PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹350</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a43ba92cb2a08.78169700" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+                            
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+                        <h2
+                            style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary-light);">
+                            PC GAME PANEL</h2>
+                        <div
+                            style="flex-grow: 1; height: 1px; background: linear-gradient(90deg, var(--primary), transparent);">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-8">
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/refs/heads/main/ChatGPT%20Image%20May%2010%2C%202026%2C%2004_01_17%20AM.png" alt="COUNTER STRIKE 2 PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_69ffb6a28cad40.68244920" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        COUNTER STRIKE 2 PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹1,200</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_69ffb6a28cad40.68244920" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/ChatGPT%20Image%20May%2010,%202026,%2003_59_26%20AM.png?raw=true" alt="VALORANT PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_69ffb6ed5e6302.63252000" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        VALORANT PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹1,300</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_69ffb6ed5e6302.63252000" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                <div class="glass-card" style="padding: 0;">
+                                <div style="position: relative; overflow: hidden;" class="product-image-container">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/file_00000000f9947208b907ffb526763f30.png?raw=true" alt="GRAND RP PANEL"
+                                        style="width: 100%; height: 220px; object-fit: cover;">
+                                    
+                                    <!-- Hover Overlay -->
+                                    <div class="card-overlay">
+                                        <a href="product-details.php?id=products_6a0022f6c2f354.32997336" class="btn btn-primary"
+                                            style="padding: 0.5rem 1rem; border-radius: 2rem;">
+                                            View Details <i data-lucide="eye" style="width: 16px;"></i>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <span class="badge"
+                                        style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(239, 68, 68, 0.9); color: white; padding: 0.2rem 0.5rem; z-index: 5; font-size: 0.65rem; font-weight: 700; backdrop-filter: blur(4px);">
+                                                                                    SOLD OUT                                                                            </span>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h3
+                                        style="font-size: 1.1rem; margin-bottom: 0.5rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                        GRAND RP PANEL</h3>
+                                    <p
+                                        style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin-bottom: 1.5rem; height: 3em; overflow: hidden;">
+                                                                            </p>
+
+                                    <div
+                                        style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                        <div>
+                                                                                            <div
+                                                    style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">
+                                                    Starting at</div>
+                                                <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+                                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary-light);">
+                                                        ₹1,300</div>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                                    <a href="product-details.php?id=products_6a0022f6c2f354.32997336" class="btn btn-icon"
+                                                style="background: var(--primary); color: white; border: none; padding: 0.5rem; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                                                <i data-lucide="shopping-cart" style="width: 16px;"></i>
+                                            </a>
+                                                                            </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            
+                    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="flex justify-between" style="margin-bottom: 4rem; text-align: left; gap: 4rem;">
+                <div style="flex: 1.5;">
+                    <a href="index.php" class="navbar-brand" style="margin-bottom: 1.5rem;">
+                        <div class="navbar-logo-icon">
+                            <i data-lucide="shield-check" style="width: 18px;"></i>
+                        </div>
+                        <span class="navbar-logo-text">PRITAM<span style="color: var(--primary);">999</span></span>
+                    </a>
+                    <p
+                        style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; max-width: 400px; margin-bottom: 2rem;">
+                        The most brutal cheats and OP level collections for Free Fire. Built with 3-layer security to
+                        keep your accounts safe and dominating.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="btn-icon" style="width: 36px; height: 36px; border-radius: 50%;"><i
+                                data-lucide="twitter" style="width: 16px;"></i></a>
+                        <a href="#" class="btn-icon" style="width: 36px; height: 36px; border-radius: 50%;"><i
+                                data-lucide="facebook" style="width: 16px;"></i></a>
+                        <a href="#" class="btn-icon" style="width: 36px; height: 36px; border-radius: 50%;"><i
+                                data-lucide="instagram" style="width: 16px;"></i></a>
+                        <a href="#" class="btn-icon" style="width: 36px; height: 36px; border-radius: 50%;"><i
+                                data-lucide="send" style="width: 16px;"></i></a>
+                    </div>
+                </div>
+
+                <div class="flex gap-32" style="gap: 10rem;">
+                    <div style="min-width: 180px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 1.5rem; color: var(--text-main);">Quick Links</h4>
+                        <ul class="footer-links" style="font-size: 0.9rem;">
+                            <li><a href="shop.php">All Marketplace</a></li>
+                            <li><a href="shop.php?type=cheat">Cheat Store</a></li>
+                            <li><a href="shop.php?type=account">Account ID List</a></li>
+                            <li><a href="login.php">Store Login</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 1rem; margin-bottom: 1.5rem; color: var(--text-main);">Customer Care</h4>
+                        <ul class="footer-links" style="font-size: 0.9rem;">
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">Term of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid var(--border); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-muted);">
+                <div>&copy; 2026 PRITAM999 GAMING. All rights reserved.</div>
+                <div class="flex gap-6">
+                    <span class="flex items-center gap-2"><i data-lucide="shield"
+                            style="width: 14px; color: var(--success);"></i> AES-256 Encrypted</span>
+                    <span class="flex items-center gap-2"><i data-lucide="zap"
+                            style="width: 14px; color: var(--primary);"></i> Fast Delivery</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Alert Modal -->
+    
+    <script>
+        lucide.createIcons();
+
+        /* Basic Protection (Prevents easy copying, but allows DevTools) */
+        // console.clear();
+    </script>
+<script src="assets/js/shield.js?v=1783963526"></script></body>
+
+</html>

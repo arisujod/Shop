@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PRITAM 999 | ELITE GAMING STORE</title>
+    <meta name="description" content="The premier destination for high-end digital enhancements, elite accounts, and premium gaming assets. PRITAM 999 provides the ultimate tactical advantage.">
+    <meta name="keywords" content="ANDROID PANEL, PC PANEL, FREE FIRE ID, Mystery Box, 𝗶𝗢𝗦 𝗣𝗔𝗡𝗘𝗟, PC GAME PANEL, Pritam999, Free Fire Cheats, Elite Gaming Assets, Mod Menu, Tactical Advantage">
+    <meta name="author" content="PRITAM 999">
+    <meta name="robots" content="index, follow">
+    <meta property="og:image" content="assets/img/og-preview.png">
+    <link rel="canonical" href="https://pritam999.shop/">
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PRITAM 999",
+      "url": "https://pritam999.shop/",
+      "description": "Premium destination for digital enhancements and elite gaming assets.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pritam999.shop/shop.php?query={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="assets/css/core.css?v=1.0.8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/core.css?v=1.0.8">
+    <style>
+        :root {
+            --primary: #ff0033;
+            --primary-glow: #ff003333;
+            --bg-deep: #05070a;
+            --bg-card: rgba(13, 17, 23, 0.4);
+            --border: rgba(255, 255, 255, 0.08);
+            --text-muted: #94a3b8;
+            --font-main: 'Outfit', sans-serif;
+            --primary-rgb: 255, 0, 51;
+        }
+        
+        /* --- THEME-SYNCED PREMIUM SCROLLBAR --- */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-deep); border-left: 1px solid var(--border); }
+        ::-webkit-scrollbar-thumb { 
+            background: linear-gradient(to bottom, var(--primary), rgba(var(--primary-rgb), 0.6));
+            border-radius: 10px;
+            border: 2px solid var(--bg-deep);
+        }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+        /* Firefox */
+        * { scrollbar-width: thin; scrollbar-color: var(--primary) var(--bg-deep); }
+
+        * { font-family: var(--font-main); }
+
+        body {
+            background-color: var(--bg-deep);
+            color: #fff;
+            margin: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .btn-pill-outline:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        /* Premium Navbar */
+        .navbar-floating {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: max-content;
+            min-width: 320px;
+            max-width: 95vw;
+            padding: 10px 24px;
+            background: rgba(13, 17, 23, 0.7);
+            backdrop-filter: blur(15px) saturate(180%);
+            border: 1.5px solid var(--border);
+            border-radius: 60px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .nav-link-item {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 6px 14px;
+            border-radius: 50px;
+        }
+
+        .nav-link-item:hover, .nav-link-item.active {
+            color: #fff;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .btn-pill {
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-pill-primary {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 4px 15px var(--primary-glow);
+        }
+
+        .btn-pill-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 20px var(--primary);
+        }
+
+        .btn-pill-outline {
+            border: 1px solid var(--border);
+            color: #fff;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .btn-pill-outline:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        /* Logo Spin Animation */
+        .spin-logo {
+            display: inline-block;
+            animation: spinEntrance 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            transform-origin: center;
+        }
+
+        @keyframes spinEntrance {
+            0% {
+                transform: rotate(-360deg) scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+        }
+        .hero-wrap {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            background: transparent; /* Allow global background to show through */
+            padding-top: 4rem; /* Shift down */
+        }
+
+        .hero-glow-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 1200px;
+            height: 1200px;
+            background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            filter: blur(180px);
+            opacity: 0.8;
+        }
+
+        .title-main {
+            font-size: clamp(5rem, 20vw, 12rem);
+            font-weight: 950;
+            line-height: 0.8;
+            letter-spacing: -6px;
+            margin: 0;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #fff 0%, #64748b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 50px rgba(255,255,255,0.2));
+            z-index: 2;
+        }
+
+        .title-sub {
+            font-size: clamp(6rem, 30vw, 18rem);
+            font-weight: 950;
+            color: var(--primary);
+            line-height: 0.85;
+            margin-top: -20px;
+            text-transform: uppercase;
+            text-shadow: 0 0 40px var(--primary); /* Reduced glow */
+            letter-spacing: -10px;
+            z-index: 1;
+        }
+
+        .hero-description {
+            max-width: 900px;
+            margin: 1.5rem auto;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: #fff;
+        }
+
+        .trust-badges span { display: flex; align-items: center; gap: 8px; }
+        .trust-badges .dot { width: 6px; height: 6px; background: var(--primary); border-radius: 50%; box-shadow: 0 0 10px var(--primary); }
+
+        /* Deep Aurora & Cosmic Nebula Backgrounds */
+        .deep-aurora {
+            position: fixed;
+            inset: 0;
+            z-index: -3;
+            background: #000;
+            overflow: hidden;
+        }
+        .deep-aurora::before,
+        .deep-aurora::after {
+            content: '';
+            position: absolute;
+            inset: -50%;
+            background: repeating-linear-gradient(
+                100deg,
+                var(--primary) 10%,
+                #000 20%,
+                var(--primary-glow) 30%,
+                #000 40%
+            );
+            filter: blur(120px) contrast(1.5);
+            opacity: 0.25;
+            animation: aurora-spin 60s linear infinite;
+        }
+        .deep-aurora::after {
+            animation-duration: 45s;
+            animation-direction: reverse;
+            opacity: 0.15;
+        }
+
+        .cosmic-nebula {
+            position: fixed;
+            inset: 0;
+            z-index: -3;
+            background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+        }
+        .cosmic-nebula::before {
+            content: '';
+            position: absolute;
+            inset: -50%;
+            background: 
+                radial-gradient(circle at 20% 30%, var(--primary) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, var(--primary-glow) 0%, transparent 40%);
+            filter: blur(150px);
+            opacity: 0.3;
+            animation: nebula-float 30s ease-in-out infinite alternate;
+        }
+
+        @keyframes aurora-spin {
+            from { transform: rotate(0deg) scale(1.5); }
+            to { transform: rotate(360deg) scale(1.5); }
+        }
+        @keyframes nebula-float {
+            from { transform: translate(-5%, -5%) scale(1); }
+            to { transform: translate(5%, 5%) scale(1.1); }
+        }
+        .aurora-animate {
+            position: fixed;
+            inset: 0;
+            z-index: -3;
+            background: #05070a;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .aurora-layer {
+            position: absolute;
+            inset: -50%;
+            opacity: 0.5;
+            filter: blur(100px) contrast(1.2);
+            background: repeating-linear-gradient(100deg, var(--primary) 10%, #000 15%, var(--primary-glow) 20%, #000 25%, var(--primary) 30%);
+            background-size: 300% 200%;
+            background-position: 50% 50%;
+            animation: aurora-move 40s linear infinite;
+        }
+        @keyframes aurora-move {
+            0% { background-position: 50% 50%; }
+            100% { background-position: 350% 50%; }
+        }
+        .premium-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .shop-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1.5rem;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .shop-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 30px var(--primary-glow);
+        }
+
+        .shop-card .card-content {
+            transition: all 0.5s ease;
+        }
+
+        .shop-card:hover .card-content {
+            filter: blur(5px) brightness(0.6);
+            transform: scale(0.98);
+        }
+
+        .shop-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .shop-card .hover-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.5s ease;
+            z-index: 10;
+        }
+
+        .shop-card:hover .hover-overlay {
+            opacity: 1;
+        }
+
+        .price-tag {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .navbar-floating { width: 95%; top: 10px; padding: 0 16px; height: 56px; }
+            .nav-link-item:not(.special) { display: none; }
+            .title-main { font-size: 4rem; }
+            .title-sub { font-size: 4.5rem; }
+            .trust-badges { gap: 1rem; font-size: 0.6rem; letter-spacing: 1.5px; }
+        }
+    </style>
+</head>
+<body class="custom-scrollbar">
+    
+<style>
+    body { background-color: #05070a !important; }
+    canvas { background: transparent !important; } 
+    #neural-bg-video {
+        position: fixed; inset: 0; width: 100vw; height: 100vh;
+        object-fit: cover; z-index: -15; opacity: 0.6;
+        pointer-events: none; transition: opacity 2s ease; background: #05070a;
+    }
+</style>
+
+    <video id="neural-bg-video" autoplay loop muted playsinline preload="auto">
+        <source src="assets/video/video_1782830065.mp4" type="video/mp4">
+    </video>
+    <script>
+        (function() {
+            const vid = document.getElementById('neural-bg-video');
+            vid.style.opacity = '0.6';
+            const activate = () => { if (vid.paused) vid.play().catch(e => {}); };
+            ['click', 'touchstart', 'scroll'].forEach(evt => window.addEventListener(evt, activate, { once: true }));
+        })();
+    </script>
+
+
+<!-- GLOBAL PREMIUM MUSIC HUB v3.1 (HARD-CODED) -->
+<style>
+    #neural-sync-v3 {
+        position: fixed; bottom: 30px; left: 30px; z-index: 999999999 !important;
+        background: rgba(13, 17, 23, 0.9); backdrop-filter: blur(25px) saturate(180%);
+        border: 2px solid rgba(255,255,255,0.15); border-radius: 50px;
+        padding: 12px 25px; display: flex !important; align-items: center; gap: 15px;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.8), 0 0 30px rgba(255, 0, 51, 0.4);
+        transition: all 0.4s ease; font-family: 'Outfit', sans-serif; opacity: 1 !important; visibility: visible !important;
+    }
+    .sync-btn { background: none; border: none; color: #fff; cursor: pointer; display: flex; transition: 0.3s; }
+    .sync-slider { -webkit-appearance: none; width: 110px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 5px; outline: none; }
+    .sync-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: #fff; border: 3px solid #ff0033; cursor: pointer; }
+    </style>
+
+<div id="neural-sync-v3">
+    <button id="v3-play-btn" class="sync-btn" style="filter: drop-shadow(0 0 8px #ff0033);">
+        <span id="v3-icon-wrap"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+    </button>
+    <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.15);"></div>
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+        <div style="display: flex; justify-content: space-between; width: 110px;">
+            <span style="font-size: 0.7rem; color: #94a3b8; font-weight: 800; text-transform: uppercase;">Volume</span>
+            <span id="v3-vol-txt" style="font-size: 0.7rem; color: #ff0033; font-weight: 800;">80%</span>
+        </div>
+        <input type="range" id="v3-range" class="sync-slider" min="0" max="1" step="0.01" value="0.8">
+    </div>
+</div>
+
+<script>
+(function() {
+    const audioUrl = '';
+    
+    // --- AUDIO ENGINE INITIALIZATION ---
+    const initAudio = () => {
+        if (window.bgAudio) return;
+
+        if (audioUrl) {
+            // Priority 1: Dedicated Music URL
+            window.bgAudio = new Audio(audioUrl);
+            window.bgAudio.loop = true;
+            window.bgAudio.volume = localStorage.getItem('bg_audio_vol') || 0.8;
+            if (localStorage.getItem('bg_audio_pos')) window.bgAudio.currentTime = localStorage.getItem('bg_audio_pos');
+            window.bgAudio.load();
+        } else {
+            // Priority 2: Fallback to Background Video
+            const vid = document.getElementById('neural-bg-video');
+            if (vid) {
+                window.bgAudio = vid;
+                window.bgAudio.volume = localStorage.getItem('bg_audio_vol') || 0.8;
+            }
+        }
+    };
+
+    initAudio();
+    const audio = window.bgAudio;
+    const playIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
+    const pauseIcon = `<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+
+    const syncUI = () => {
+        if (!audio) return;
+        const wrap = document.getElementById('v3-icon-wrap');
+        const volTxt = document.getElementById('v3-vol-txt');
+        const range = document.getElementById('v3-range');
+        if (wrap) wrap.innerHTML = audio.paused ? playIcon : pauseIcon;
+        if (volTxt) volTxt.innerText = Math.round(audio.volume * 100) + '%';
+        if (range) {
+            range.value = audio.volume;
+            const v = audio.volume * 100;
+            range.style.background = `linear-gradient(to right, #ff0033 ${v}%, rgba(255,255,255,0.1) ${v}%)`;
+        }
+    };
+
+    if (audio) {
+        document.getElementById('v3-play-btn').onclick = (e) => {
+            e.stopPropagation(); 
+            if (audio.paused) audio.play(); else audio.pause(); 
+            if (audio.id === 'neural-bg-video') audio.muted = false; // Unmute if video
+            syncUI();
+        };
+        document.getElementById('v3-range').oninput = (e) => {
+            audio.volume = e.target.value; 
+            if (audio.id === 'neural-bg-video' && audio.volume > 0) audio.muted = false;
+            syncUI();
+        };
+        
+        const unlock = () => { 
+            initAudio(); // Re-check if somehow lost
+            if (audio.id === 'neural-bg-video') audio.muted = false;
+            if (audio.paused) audio.play().catch(()=>{}); 
+            if (typeof connectAudio === 'function') connectAudio(); 
+            syncUI(); 
+            ['click','touchstart'].forEach(ev => document.removeEventListener(ev, unlock));
+        };
+        ['click','touchstart'].forEach(ev => document.addEventListener(ev, unlock));
+
+        setInterval(() => {
+            if (audio.currentTime > 0) {
+                localStorage.setItem('bg_audio_pos', audio.currentTime);
+                localStorage.setItem('bg_audio_vol', audio.volume);
+            }
+            syncUI();
+        }, 1000);
+        syncUI();
+    } else {
+        document.getElementById('v3-vol-txt').innerText = "OFF";
+        document.getElementById('v3-range').disabled = true;
+    }
+})();
+</script>
+    <!-- Premium Navbar -->
+    <nav class="navbar-floating">
+        <a href="index.php" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+            <div style="background: var(--primary); padding: 6px; border-radius: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <style>
+                .logo-text { display: flex; gap: 0; align-items: center; cursor: pointer; }
+                .logo-text .char { 
+                    display: inline-block; 
+                    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); 
+                    font-family: 'Outfit', sans-serif;
+                }
+                .logo-text:hover .char { transform: scale(1.1); color: var(--primary); opacity: 0.7; }
+                .logo-text .char:hover { transform: scale(1.8) translateY(-8px) rotate(8deg) !important; color: #fff !important; opacity: 1 !important; text-shadow: 0 0 20px var(--primary); z-index: 10; }
+            </style>
+            <div class="logo-text">
+                <span class="char" style="font-size: 1.2rem; font-weight: 900; color: #fff;">P</span>
+                <span class="char" style="font-size: 1.2rem; font-weight: 900; color: #fff;">R</span>
+                <span class="char" style="font-size: 1.2rem; font-weight: 900; color: #fff;">I</span>
+                <span class="char" style="font-size: 1.2rem; font-weight: 900; color: #fff;">T</span>
+                <span class="char" style="font-size: 1.2rem; font-weight: 900; color: #fff;">A</span>
+                <span class="char" style="font-size: 1.2rem; font-weight: 900; color: #fff;">M</span>
+                <span class="char" style="font-size: 1.25rem; font-weight: 900; color: var(--primary); margin-left: 2px;">9</span>
+                <span class="char" style="font-size: 1.25rem; font-weight: 900; color: var(--primary);">9</span>
+                <span class="char" style="font-size: 1.25rem; font-weight: 900; color: var(--primary);">9</span>
+            </div>
+        </a>
+
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <a href="index.php" class="nav-link-item active">Home</a>
+                                                <a href="index.php?category=ANDROID+PANEL" 
+                       class="nav-link-item ">
+                       ANDROID PANEL                    </a>
+                                                                <a href="index.php?category=PC+PANEL" 
+                       class="nav-link-item ">
+                       PC PANEL                    </a>
+                                                                <a href="index.php?category=FREE+FIRE+ID" 
+                       class="nav-link-item ">
+                       FREE FIRE ID                    </a>
+                                                                <a href="index.php?category=Mystery+Box" 
+                       class="nav-link-item ">
+                       Mystery Box                    </a>
+                                                                <a href="index.php?category=%F0%9D%97%B6%F0%9D%97%A2%F0%9D%97%A6+%F0%9D%97%A3%F0%9D%97%94%F0%9D%97%A1%F0%9D%97%98%F0%9D%97%9F" 
+                       class="nav-link-item ">
+                       𝗶𝗢𝗦 𝗣𝗔𝗡𝗘𝗟                    </a>
+                                                                <a href="index.php?category=PC+GAME+PANEL" 
+                       class="nav-link-item ">
+                       PC GAME PANEL                    </a>
+                                    </div>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+                            <a href="login.php" class="nav-link-item special">Sign In</a>
+                <a href="register.php" class="btn-pill btn-pill-primary">Sign Up</a>
+                    </div>
+    </nav>
+
+        <header class="hero-wrap">
+        <div class="hero-glow-bg"></div>
+        
+                    <div style="background: rgba(var(--primary-rgb), 0.1); border: 1px solid var(--primary); padding: 4px 16px; border-radius: 40px; margin-bottom: 2rem; font-size: 0.7rem; font-weight: 800; color: #fff; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;">
+                <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; display: inline-block;"></span>
+                Fast Delivery • Trusted Service • Premium Quality • 24/7 Support            </div>
+        
+        
+        <h1 class="title-main" >
+            PRITAM        </h1>
+        <h1 class="title-sub spin-logo" >
+            999        </h1>
+
+        <div class="trust-badges">
+            <span><div class="dot"></div> EXCLUSIVE</span>
+            <span><div class="dot"></div> UNDETECTED</span>
+            <span><div class="dot"></div> ELITE SUPPORT</span>
+        </div>
+
+        <p class="hero-description">
+            The premier destination for high-end digital enhancements and gaming assets.
+            <br><strong>Experience the next generation of tactical advantage with PRITAM 999.</strong>
+        </p>
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+            <a href="#explore" class="btn-pill btn-pill-primary" style="padding: 16px 50px; font-size: 1rem; border-radius: 60px; box-shadow: 0 15px 45px var(--primary-glow); transition: all 0.5s ease;">
+                <i data-lucide="shopping-bag" style="width: 22px; height: 22px;"></i>
+                ENTER MARKETPLACE
+            </a>
+            
+            <div style="display: flex; gap: 24px; align-items: center; background: rgba(255,255,255,0.03); padding: 12px 30px; border-radius: 50px; border: 1.5px solid rgba(255,255,255,0.05); backdrop-filter: blur(10px);">
+                <a href="https://wa.me/918459697630" target="_blank" class="hero-social-link" style="color: #25D366;"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.067 2.877 1.215 3.076.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a><a href="https://t.me/+c30duvub8wZjMGQ9" target="_blank" class="hero-social-link" style="color: #0088cc;"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1 .22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.89.03-.24.36-.49.99-.75 3.87-1.68 6.45-2.79 7.74-3.33 3.68-1.54 4.44-1.81 4.94-1.82.11 0 .36.03.52.16.14.11.18.25.2.46-.01.07-.01.15-.02.23z"/></svg></a><a href="https://youtube.com/@pritam999main?si=VfSoaueqbT7tHkOt" target="_blank" class="hero-social-link" style="color: #ff0000;"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="https://discord.gg/pritam999" target="_blank" class="hero-social-link" style="color: #5865F2;"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.885 1.515.069.069 0 0 0-.032.027C.533 9.048-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.334-.956 2.419-2.157 2.419zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.946-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.334-.946 2.419-2.157 2.419z"/></svg></a>            </div>
+            <style>
+                .hero-social-link { opacity: 0.7; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; transform: scale(1); }
+                .hero-social-link:hover { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 10px currentColor); }
+            </style>
+        </div>
+    </header>
+    
+    <section id="explore" style="padding: 100px 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+                                            
+                <div style="margin-bottom: 80px;">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px;">
+                        <h2 style="font-size: 1.5rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 2px;">
+                            <span style="color: var(--primary);">/</span> ANDROID PANEL                        </h2>
+                        <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), transparent);"></div>
+                    </div>
+
+                    <div class="premium-card-grid">
+                                                                        <a href="product-details.php?id=products_6a2848b13cb6c8.66056754" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/Picsart_26-06-09_18-09-44-807.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Digital License
+                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">TERMINAL X 999 PHONE</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📝 Function • Auto Eliminate Football Hit • Silent Aim • Headshot Hack • Aimbot Legit • Aim Fov 360° • Aim Magnet • No Reload • UnderKill • Speed Hack • Esp Line Location • 🄲🅂 / 🄱🅁 Rank Working
+
+  | 𝐍𝐎𝐓𝐄 :
+- ʀᴏᴏᴛ ᴅᴇᴠɪᴄᴇ ᴅɪʀᴇᴄᴛ 
+- ɴᴏɴ ʀᴏᴏᴛ • ᴄʟᴏᴜᴅ ᴠɪʀᴛᴜᴀʟ
+
+Note: This product is fully optimized and officially available for Rooted Devices, where it runs smoothly and delivers the best experience.
+Non-Root Device support is currently under testing. For now, Non-Root users can use the product via our Cloud Virtual Environment, which requires a stable internet connection. A dedicated private virtual solution for Non-Root devices is currently in development and will be released soon.</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>140.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766529749470" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/SHOP-PHOTO/refs/heads/main/Picsart_26-01-23_18-59-44-329.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    141 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">DRIP CLIENT MOD MENU</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Silent Aimbot • Aimbot Rage / Legit • Aim Magnet • Speed Timer • Teleport 8M • Up Players • Fly Car • Ghost Mode • Antatu Player • Esp Line Location • 120 FPS Unblock • 🄲🅂 / 🄱🅁 Rank Working</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>80.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a2c8e0d816ad3.38372845" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/1023afc43c0142e32bbfbadca795c219dd625a7b/Picsart_26-06-13_04-19-22-950.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    86 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">DRIP CLIENT PROXY</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Aimbot Head • Aimbot Neck • Aimbot Body • Fast Gun Change • Speed Timer • High Jump • 🄲🅂 / 🄱🅁 Rank Working
+
+- best for non root device</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>90.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766528334662" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/SHOP-PHOTO/refs/heads/main/Picsart_26-02-27_22-08-21-497.jpg" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    136 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">HG CHEAT MOD MENU / INJECTOR</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Aim Silent • Auto Headshot • Aimbot Full • Aim Visible • Aimfov 180 • Fast Speed Mode • Esp Line Location • Cs / Br Rank Working
+
+| Supports – One Key Works On Both Versions
+• Mod Menu (Non-Root Device )
+• Injector (Root Device)</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>90.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a1731b88cd886.76520638" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/refs/heads/main/Picsart_26-05-27_23-13-44-665.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    38 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">PRIME MOD MENU</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Aim Silent • Auto Headshot • Aimbot Full • Aim Visible • Aimfov 180 • Fast Speed Mode • Esp Line Location • Cs / Br Rank Working</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>80.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766530271879" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/SHOP-PHOTO/refs/heads/main/Picsart_26-01-23_22-20-11-039.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    353 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">BR MOD INJECTOR</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function •Silent Aimbot •Auto Headshot • Magnet Player •Fast Speed •Up Player •Telekill •Ghost Mode •Esp Line Location</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>80.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766565966002" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/SHOP-PHOTO/refs/heads/main/Picsart_26-01-23_23-02-44-951.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Digital License
+                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">𝗛𝗔𝗫𝗫𝗖𝗞𝗘𝗥 𝗣𝗥𝗢 𝗜𝗡𝗝𝗘𝗖𝗧𝗢𝗥</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Aimbot Full • Auto Headshot • Headshot Rate • AimFov 500 • Esp Line Location • Streamer Mode • Hide From Screen Capture • CS / BR Rank Working
+
+📍 Best For Root Device
+- Main Account Antiban Safe 100%</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>550.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766565966007" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-01-24_00-15-16-329.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    13 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">DRIP CLIENT ROOT INJECTOR</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Silent Aimbot • Aimbot Rage / Legit • Aim Magnet • Speed Timer • Teleport 8M • Up Players • Fly Car • Ghost Mode • Antatu Player • Esp Line Location • 120 FPS Unblock • CS / BR Rank Working</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>80.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766565966010" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-27_23-08-35-346.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    44 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">PATO TEAM ORANGE MOD MENU</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Aimkill Fire • Rain Kill • Silent Aimbot • Auto Headshot • Aimbot Legit • Aimbot Visible • Aim Magnet • Speed Hack • Teleport Mode • Auto Fire • Up Players • Fly Car • Ghost Mode • Esp Line Location • Optimize Low Device • CS/BR Rank Working
+
+- Orange Version Full Brutal Function.</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>150.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766565966013" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-27_23-21-53-003.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    46 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">PATO TEAM BLUE MOD MENU</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Auto Headshot • Aimbot Legit • Aimbot Visible • Aim Assistant • AimFov 100° • Aimbot All Type Adjustable • Esp Line Location • Optimize Low Device • CS/BR Rank Working
+
+- Blue Version Safe Normal Function.</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>150.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766565966015" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-27_23-35-43-637.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    60 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">STRICKS BR INJECTOR</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">524424</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>90.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a270a0c83bde0.34310471" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/Picsart_26-06-08_23-52-27-464.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    44 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">FLUX CHEATS INJECTOR</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📝 Function • Silent Aim • Headshot Hack • Aimbot Legit • Aim fov 360° • Aim magnet • Spin Bot • No Reload • UnderKill • Speed Hack • Esp Line Location • 🄲🅂 / 🄱🅁 Rank Working
+
+  | 𝐍𝐎𝐓𝐄 :
+- ʀᴏᴏᴛ ᴅᴇᴠɪᴄᴇ ᴅɪʀᴇᴄᴛ 
+- ɴᴏɴ ʀᴏᴏᴛ • ᴄʟᴏᴜᴅ ᴠɪʀᴛᴜᴀʟ</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>70.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a3d58ce69f378.74093657" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/Picsart_26-06-25_21-50-33-679.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">HG CHEATS PROXY</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📑 Function • Aimbot Head • Aimbot Neck • Aimbot Body • Bypass AntiCheat • 🄲🅂 / 🄱🅁 Rank Working</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>80.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a3db5eea09e40.03258735" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/082d5e9e35a9f4b73155b5cb42d4c6cd3da75833/Picsart_26-06-26_03-52-59-179.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    29 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">EZ TEAM 8 BALL POOL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>80.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                            </div>
+                </div>
+                                            
+                <div style="margin-bottom: 80px;">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px;">
+                        <h2 style="font-size: 1.5rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 2px;">
+                            <span style="color: var(--primary);">/</span> PC PANEL                        </h2>
+                        <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), transparent);"></div>
+                    </div>
+
+                    <div class="premium-card-grid">
+                                                                        <a href="product-details.php?id=products_6a4442a6eb11c7.52412706" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/ChatGPT%20Image%20Jul%201,%202026,%2003_49_10%20AM.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    97 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">TERMINAL X 999 GROUP BAN TOOL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">- Grand Master status will be shown.
+- Your ID will be blacklisted within 1 hour.,
+- No penalty will be applied to your account.</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>800.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766486867031" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/refs/heads/main/ChatGPT%20Image%20Dec%2027%2C%202025%2C%2001_55_18%20AM.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Digital License
+                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">TERMINAL X 999 AIM SILENT EXE</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">🎮 EXE Function • Aim Silent 360° • Aimbot Internal (Range / Hex) • Aim Silent Lite • AimFov 999° • Ignore Knock • No Recoil • UP Player While Firing • Teleport Mode • Teleport Mode • Ghost Mode • Shake Kill • Freeze Kill • Under Kill • Fast Fire • No Reload • Speed Mode Joystick Shifter • ESP Line Box Info • ESP Skeleton • ESP Mini Map Weapon • Hot Key • Streamer Mode • Rank Working</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>100.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766485953433" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/refs/heads/main/ChatGPT%20Image%20Dec%2024%2C%202025%2C%2003_06_24%20PM.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Digital License
+                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">TERMINAL X BASIC PC PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">🛠 SAFE Features • Aimbot Global • Aimbot External • Sniper Switch • Sniper Scope • No Recoil • Glitch Fire • ESP Line Box • ESP Alert • ESP Information Weapon • Auto Refresh • Streamer Mode</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>500.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766487129260" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/refs/heads/main/ChatGPT%20Image%20Dec%2027%2C%202025%2C%2001_55_22%20AM.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Digital License
+                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">TERMINAL X 999 EMULATOR BYPASS</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📍 Note : If you want to bypass the emulator logo, you’ll need to purchase it separately. This feature allows you to play CS Rank and BR Rank matches, and it ensures matchmaking with mobile players for a seamless gaming experience.</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>450.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a439646768800.35036774" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/file_0000000006187206bbc6438a95dec391.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Digital License
+                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">TERMINAL X 999 VAULT</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">- Custom login popup
+- Dress changer 
+- All emote option 
+
+Note : You can use any outfit and any emote, even if you don&amp;amp;amp;amp;#039;t own them. Other players will also be able to see your outfit and emotes in-game.</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>70.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a002831e8c526.21027445" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/PRITAM-999/blob/main/ChatGPT%20Image%20May%2010,%202026,%2012_14_37%20PM.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Digital License
+                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">EXTERNAL PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>200.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a002f51adf878.11477833" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/fe522bd25944fef03e84090b2d1b9e3f37d5554b/ChatGPT%20Image%20May%2010%2C%202026%2C%2012_36_49%20PM.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">FREE PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>1.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a3d7da29e92a2.98730759" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/file_0000000022b47206bb7ac83712288887.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">BR MOD AIMSILENT EXE</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>90.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                            </div>
+                </div>
+                                            
+                <div style="margin-bottom: 80px;">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px;">
+                        <h2 style="font-size: 1.5rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 2px;">
+                            <span style="color: var(--primary);">/</span> FREE FIRE ID                        </h2>
+                        <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), transparent);"></div>
+                    </div>
+
+                    <div class="premium-card-grid">
+                                                                        <a href="product-details.php?id=1766565966001" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/PRITAM-999/refs/heads/main/1766617255577.jpg" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    5 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">FACEBOOK LEVEL 8 ID</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">❗️ ꜱᴇᴄᴜʀᴇ ᴀᴄᴄᴏᴜɴᴛ
+❗️ ɪɴꜱᴛᴀɴᴛ ᴀᴄᴏᴜɴᴛ ᴅᴇʟɪᴠᴇʀʏ
+❗️ ᴏɴʟʏ ɪɴᴅɪᴀɴ ꜱᴇʀᴠᴇʀ
+
+• ᴄs &amp;amp; ʙʀ ʀᴀɴᴋ sᴜᴘᴘᴏʀᴛᴇᴅ</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>60.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766565966003" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/PRITAM-999/blob/main/1766617726687.jpg?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    1 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">GOOGLE LEVEL 8 ID</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">❗️ ꜱᴇᴄᴜʀᴇ ᴀᴄᴄᴏᴜɴᴛ
+❗️ ɪɴꜱᴛᴀɴᴛ ᴀᴄᴏᴜɴᴛ ᴅᴇʟɪᴠᴇʀʏ
+❗️ ᴏɴʟʏ ɪɴᴅɪᴀɴ ꜱᴇʀᴠᴇʀ
+
+• ᴄs &amp;amp;amp;amp;amp;amp; ʙʀ ʀᴀɴᴋ sᴜᴘᴘᴏʀᴛᴇᴅ</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>50.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766565966006" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/PRITAM-999/blob/main/Picsart_25-12-27_03-06-49-005.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">LEVEL UP SERVICE</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">⚙️ ʟᴇᴠᴇʟ ᴜᴘ ꜱᴇʀᴠɪᴄᴇ 
+🚀 ᴜɴʟɪᴍɪᴛᴇᴅ ʟᴇᴠᴇʟ ɪɴᴄʀᴇᴀꜱᴇ
+🎮 ᴀᴜᴛᴏ ᴘʟᴀʏ | 📜 ɴᴏ ᴍᴀᴛᴄʜ ʜɪꜱᴛᴏʀʏ
+🛡 100% ꜱᴀꜰᴇ – ᴍᴀɪɴ ᴀᴄᴄᴏᴜɴᴛ ᴘʀᴏᴛᴇᴄᴛᴇᴅ</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>999,999.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                            </div>
+                </div>
+                                            
+                <div style="margin-bottom: 80px;">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px;">
+                        <h2 style="font-size: 1.5rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 2px;">
+                            <span style="color: var(--primary);">/</span> Mystery Box                        </h2>
+                        <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), transparent);"></div>
+                    </div>
+
+                    <div class="premium-card-grid">
+                                                                        <a href="product-details.php?id=1766565966004" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/payment-method-logo/refs/heads/main/image_search_1776445243665.jpg" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Access Logic
+                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">Mystery Box</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">⚠️ IMPORTANT ⚠️
+
+This package is only for you.
+
+• Get keys at your price  
+• Sell keys to your clients  
+• Make profit on every sale  
+
+Not for personal use.</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>5,000.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                            </div>
+                </div>
+                                            
+                <div style="margin-bottom: 80px;">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px;">
+                        <h2 style="font-size: 1.5rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 2px;">
+                            <span style="color: var(--primary);">/</span> 𝗶𝗢𝗦 𝗣𝗔𝗡𝗘𝗟                        </h2>
+                        <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), transparent);"></div>
+                    </div>
+
+                    <div class="premium-card-grid">
+                                                                        <a href="product-details.php?id=1766565966011" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-26_18-02-49-659.jpg?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    2 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">E-SIGN CERTIFICATE</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">📍Remember, if you are buying this for the first time, then you will have to buy its e sign certificate separately. ( If you already have an e-sign certificate, just buy the iOS panel and play. )
+• Validity : 31 Day 
+• Warranty : 1 MONTH 
+• Price : 600 INR 
+
+📨 If you&amp;amp;amp;amp;amp;#039;re buying for the first time, let me give you an example: The installation process for your E-Sign certificate, which will last for one year, will cost you 1,300, and the 31 validity period will cost you 2,100 for ios panel key. The total will be 3,400.</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>500.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=1766565966012" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/SHOP-PHOTO/blob/main/Picsart_26-02-26_16-21-16-592.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(34, 197, 94, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    13 In Stock                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">iPHONE SAFE PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;">🀄 function • Silent Aimbot • Aimbot ( Auto Headshot ) • Customize Aim Assistant • Aim Fov 360° • Aim Distance 500° • Esp Line Location All Type • More Extra Misc Function • Stream Mod Proof.
+📍Remember, if you are buying this for the first time, then you will have to buy its e sign certificate separately. ( If you already have e-sign certificate then you can directly buy this iOS panel key, then play )</p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>450.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a43b9c20a9450.59980640" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/a849c110ae58f28dc208877a86ddc9c3ebb6ab46/Picsart_26-06-30_17-57-58-948.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">MIGUL PRO MONITE IOS PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>400.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a43ba92cb2a08.78169700" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/a849c110ae58f28dc208877a86ddc9c3ebb6ab46/Picsart_26-06-30_18-00-56-640.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">MIGUL BASIC MONITE IOS PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>350.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                            </div>
+                </div>
+                                            
+                <div style="margin-bottom: 80px;">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px;">
+                        <h2 style="font-size: 1.5rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 2px;">
+                            <span style="color: var(--primary);">/</span> PC GAME PANEL                        </h2>
+                        <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), transparent);"></div>
+                    </div>
+
+                    <div class="premium-card-grid">
+                                                                        <a href="product-details.php?id=products_69ffb6a28cad40.68244920" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://raw.githubusercontent.com/rose999yt/AAA/refs/heads/main/ChatGPT%20Image%20May%2010%2C%202026%2C%2004_01_17%20AM.png" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">COUNTER STRIKE 2 PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>1,200.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_69ffb6ed5e6302.63252000" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/ChatGPT%20Image%20May%2010,%202026,%2003_59_26%20AM.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">VALORANT PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>1,300.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                                                        <a href="product-details.php?id=products_6a0022f6c2f354.32997336" class="shop-card">
+                            <div class="card-content">
+                                <div style="position: relative;">
+                                    <img src="https://github.com/rose999yt/AAA/blob/main/file_00000000f9947208b907ffb526763f30.png?raw=true" alt="Product">
+                                                                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(239, 68, 68, 0.9); color: #fff; font-size: 0.6rem; font-weight: 900; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px);">
+                                                                                    Sold Out                                                                            </div>
+                                </div>
+                                <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">GRAND RP PANEL</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 20px; height: 40px; overflow: hidden;"></p>
+                                
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 15px;">
+                                    <div class="price-tag"><span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2px;">₹</span>1,300.00</div>
+                                    <span class="btn-pill btn-pill-primary" style="padding: 8px 16px; font-size: 0.7rem;">BUY NOW</span>
+                                </div>
+                            </div>
+                            <div class="hover-overlay">
+                                <div class="btn-pill btn-pill-primary" style="padding: 12px 28px; font-size: 0.8rem; box-shadow: 0 0 30px var(--primary);">VIEW DETAILS</div>
+                            </div>
+                        </a>
+                                            </div>
+                </div>
+            
+                    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="flex justify-between" style="margin-bottom: 4rem; text-align: left; gap: 4rem;">
+                <div style="flex: 1.5;">
+                    <a href="index.php" class="navbar-brand" style="margin-bottom: 1.5rem;">
+                        <div class="navbar-logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <span class="navbar-logo-text">PRITAM<span style="color: var(--primary);">999</span></span>
+                    </a>
+                    <p style="color: #64748b; font-size: 0.9rem; line-height: 1.6; max-width: 400px; margin-bottom: 2rem;">
+                        The most brutal cheats and elite accounts for Free Fire. Dominate the game with safety and power.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://t.me/+c30duvub8wZjMGQ9" target="_blank" class="btn-icon" style="width: 36px; height: 36px; border-radius: 50%; color: #0088cc;" title="Telegram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1 .22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.89.03-.24.36-.49.99-.75 3.87-1.68 6.45-2.79 7.74-3.33 3.68-1.54 4.44-1.81 4.94-1.82.11 0 .36.03.52.16.14.11.18.25.2.46-.01.07-.01.15-.02.23z"/></svg></a><a href="https://youtube.com/@pritam999main?si=VfSoaueqbT7tHkOt" target="_blank" class="btn-icon" style="width: 36px; height: 36px; border-radius: 50%; color: #ff0000;" title="Youtube"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="https://discord.gg/pritam999" target="_blank" class="btn-icon" style="width: 36px; height: 36px; border-radius: 50%; color: #5865F2;" title="Discord"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.885 1.515.069.069 0 0 0-.032.027C.533 9.048-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.334-.956 2.419-2.157 2.419zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.946-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.334-.946 2.419-2.157 2.419z"/></svg></a><a href="https://wa.me/918459697630" target="_blank" class="btn-icon" style="width: 36px; height: 36px; border-radius: 50%; color: #25d366;" title="Whatsapp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.067 2.877 1.215 3.076.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>                    </div>
+                </div>
+
+                <div class="flex gap-20">
+                    <div style="min-width: 150px;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 1.5rem; color: #fff; text-transform: uppercase; letter-spacing: 1px;">Marketplace</h4>
+                        <ul class="footer-links" style="font-size: 0.85rem;">
+                            <li><a href="shop.php">All Assets</a></li>
+                            <li><a href="shop.php?type=cheat">Cheats</a></li>
+                            <li><a href="shop.php?type=account">Accounts</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 0.9rem; margin-bottom: 1.5rem; color: #fff; text-transform: uppercase; letter-spacing: 1px;">Support</h4>
+                        <ul class="footer-links" style="font-size: 0.85rem;">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid var(--border); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: #475569;">
+                <div>&copy; 2026 PRITAM999. All rights reserved.</div>
+                <div class="flex gap-6">
+                    <span class="flex items-center gap-2">AES-256 SECURE</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Icons & Core Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+        /* Protection */
+        document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
+<script src="assets/js/shield.js?v=1783962936"></script></body>
+</html>
