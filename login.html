@@ -443,7 +443,7 @@
 
     <div class="login-container animate-up">
         <div class="logo-section">
-            <a href="index.php" style="text-decoration: none;">
+            <a href="index.html" style="text-decoration: none;">
                 <div class="logo-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
                 </div>
@@ -496,7 +496,7 @@
         </button>
 
         <div class="footer-links">
-            Don't have an account? <a href="register.php">Create Free Account</a>
+            Don't have an account? <a href="register.html">Create Free Account</a>
         </div>
     </div>
 
@@ -529,7 +529,7 @@
                     const result = await signInWithPopup(auth, provider);
                     const user = result.user;
                     
-                    const response = await fetch('auth_google.php', {
+                    const response = await fetch('auth_google.html', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
@@ -543,9 +543,9 @@
                     const data = await response.json();
                     if (data.success) {
                         if (data.requires_2fa) {
-                            window.location.href = 'verify_2fa.php';
+                            window.location.href = 'verify_2fa.html';
                         } else {
-                            window.location.href = 'index.php';
+                            window.location.href = 'index.html';
                         }
                     } else {
                         alert(data.message || 'Login failed');
