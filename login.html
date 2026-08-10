@@ -500,40 +500,41 @@
     </div>
 
         <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-      import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-    
-      const firebaseConfig = {
-        apiKey: "AIzaSyAMump-ghutkg0beTytun6vhiS7SrDl1MM",
-        authDomain: "shop-c8a7e.firebaseapp.com",
-        projectId: "shop-c8a7e",
-        storageBucket: "shop-c8a7e.firebasestorage.app",
-        messagingSenderId: "818351125426",
-        appId: "1:818351125426:web:1a85570ee665cca716eaab"
-      };
-    
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth(app);
-    
-      onAuthStateChanged(auth, (u) => { if (u) window.location.href = 'user_dashboard.html'; });
-    
-      document.getElementById('login-form').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        try {
-          await signInWithEmailAndPassword(auth, document.getElementById('email').value, document.getElementById('password').value);
-          window.location.href = 'user_dashboard.html';
-        } catch (err) {
-          alert(err.code === 'auth/invalid-credential' ? 'Galat email ya password!' : err.message);
-        }
-      });
-    
-      document.getElementById('google-login-btn').addEventListener('click', async () => {
-        try {
-          await signInWithPopup(auth, new GoogleAuthProvider());
-          window.location.href = 'user_dashboard.html';
-        } catch (err) { alert(err.message); }
-      });
-    </script>
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAuth, signInWithEmailAndPassword, signInWithRedirect, getRedirectResult, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAMump-ghutkg0beTytun6vhiS7SrDl1MM",
+    authDomain: "shop-c8a7e.firebaseapp.com",
+    projectId: "shop-c8a7e",
+    storageBucket: "shop-c8a7e.firebasestorage.app",
+    messagingSenderId: "818351125426",
+    appId: "1:818351125426:web:1a85570ee665cca716eaab"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  onAuthStateChanged(auth, (u) => { if (u) window.location.href = 'user_dashboard.html'; });
+
+  getRedirectResult(auth).then(r => {
+    if (r && r.user) window.location.href = 'user_dashboard.html';
+  }).catch(e => alert(e.message));
+
+  document.getElementById('login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(auth, document.getElementById('email').value, document.getElementById('password').value);
+      window.location.href = 'user_dashboard.html';
+    } catch (err) {
+      alert(err.code === 'auth/invalid-credential' ? 'Galat email ya password!' : err.message);
+    }
+  });
+
+  document.getElementById('google-login-btn').addEventListener('click', () => {
+    signInWithRedirect(auth, new GoogleAuthProvider());
+  });
+</script>
     <script>
         /* Protection */
         document.addEventListener('contextmenu', e => e.preventDefault());
