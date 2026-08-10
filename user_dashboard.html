@@ -500,67 +500,6 @@
         </div>
     </div>
 
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-        import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyB2quuWBr28oOMvsZMMHsrfHHtN-YNkvb0",
-            authDomain: "terminalx999-auth.firebaseapp.com",
-            projectId: "terminalx999-auth",
-            storageBucket: "terminalx999-auth.firebasestorage.app",
-            messagingSenderId: "352883761069",
-            appId: "1:352883761069:web:c1821c486f82bcc506cb24",
-            measurementId: "G-GQY2ECGGHY"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const provider = new GoogleAuthProvider();
-
-        const googleBtn = document.getElementById('google-login-btn');
-        if (googleBtn) {
-            googleBtn.addEventListener('click', async () => {
-                const originalText = googleBtn.innerHTML;
-                googleBtn.innerHTML = '<span>Processing...</span>';
-                googleBtn.disabled = true;
-
-                try {
-                    const result = await signInWithPopup(auth, provider);
-                    const user = result.user;
-                    
-                    const response = await fetch('auth_google.html', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            uid: user.uid,
-                            email: user.email,
-                            displayName: user.displayName,
-                            photoURL: user.photoURL
-                        })
-                    });
-
-                    const data = await response.json();
-                    if (data.success) {
-                        if (data.requires_2fa) {
-                            window.location.href = 'verify_2fa.html';
-                        } else {
-                            window.location.href = 'index.html';
-                        }
-                    } else {
-                        alert(data.message || 'Login failed');
-                        googleBtn.innerHTML = originalText;
-                        googleBtn.disabled = false;
-                    }
-                } catch (error) {
-                    console.error(error);
-                    alert('Google login failed: ' + error.message);
-                    googleBtn.innerHTML = originalText;
-                    googleBtn.disabled = false;
-                }
-            });
-        }
-    </script>
     <script>
         /* Protection */
         document.addEventListener('contextmenu', e => e.preventDefault());

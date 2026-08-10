@@ -443,29 +443,31 @@
 
         
         
-        <form method="POST">
-            <input type="hidden" name="csrf_token" value="2de47fe43fbef4c8af7b40e158615db6f273e5f75b1b9834bbce8253552a7d30">
+        <form id="register-form">
             
             <div class="form-group">
                 <label>Username</label>
                 <div class="input-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    <input type="text" name="username" class="form-input" placeholder="Choose a username" required autocomplete="off">
+                    <input type="text" id="username" name="username" class="form-input" placeholder="Choose a username" required autocomplete="off">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Password</label>
-                <div class="input-wrapper">
-                    <input type="password" name="password" class="form-input" placeholder="••••••••" required>
-                </div>
-            </div>
 
                         <div class="form-group">
                 <label>Referral Code (Optional)</label>
                 <div class="input-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    <input type="text" name="ref_code" class="form-input" placeholder="REF-XXXXX" value="" >
+                    <input type="text" id="ref" name="ref_code" class="form-input" placeholder="REF-XXXXX" value="">
                 </div>
             </div>
 
@@ -495,66 +497,55 @@
         </div>
     </div>
 
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-        import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyB2quuWBr28oOMvsZMMHsrfHHtN-YNkvb0",
-            authDomain: "terminalx999-auth.firebaseapp.com",
-            projectId: "terminalx999-auth",
-            storageBucket: "terminalx999-auth.firebasestorage.app",
-            messagingSenderId: "352883761069",
-            appId: "1:352883761069:web:c1821c486f82bcc506cb24",
-            measurementId: "G-GQY2ECGGHY"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const provider = new GoogleAuthProvider();
-
-        const googleBtn = document.getElementById('google-login-btn');
-        if (googleBtn) {
-            googleBtn.addEventListener('click', async () => {
-                const originalText = googleBtn.innerHTML;
-                googleBtn.innerHTML = '<span>Processing...</span>';
-                googleBtn.disabled = true;
-
-                try {
-                    const result = await signInWithPopup(auth, provider);
-                    const user = result.user;
-                    
-                    const response = await fetch('auth_google.html', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            uid: user.uid,
-                            email: user.email,
-                            displayName: user.displayName,
-                            photoURL: user.photoURL
-                        })
-                    });
-
-                    const data = await response.json();
-                    if (data.success) {
-                        if (data.requires_2fa) {
-                            window.location.href = 'verify_2fa.html';
-                        } else {
-                            window.location.href = 'index.html';
-                        }
-                    } else {
-                        alert(data.message || 'Registration failed');
-                        googleBtn.innerHTML = originalText;
-                        googleBtn.disabled = false;
-                    }
-                } catch (error) {
-                    console.error(error);
-                    alert('Google Registration failed: ' + error.message);
-                    googleBtn.innerHTML = originalText;
-                    googleBtn.disabled = false;
-                }
-            });
+        <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+      import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+    
+      const firebaseConfig = {
+        apiKey: "AIzaSyAMump-ghutkg0beTytun6vhiS7SrDl1MM",
+        authDomain: "shop-c8a7e.firebaseapp.com",
+        projectId: "shop-c8a7e",
+        storageBucket: "shop-c8a7e.firebasestorage.app",
+        messagingSenderId: "818351125426",
+        appId: "1:818351125426:web:1a85570ee665cca716eaab"
+      };
+    
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const db = getFirestore(app);
+    
+      document.getElementById('register-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const username = document.getElementById('username').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const pass = document.getElementById('password').value;
+        if (pass.length < 6) return alert('Password kam se kam 6 characters!');
+        try {
+          const cred = await createUserWithEmailAndPassword(auth, email, pass);
+          await updateProfile(cred.user, { displayName: username });
+          await setDoc(doc(db, 'users', cred.user.uid), {
+            uid: cred.user.uid, username, email,
+            refCode: document.getElementById('ref').value.trim() || null,
+            role: 'user', createdAt: Date.now()
+          });
+          window.location.href = 'user_dashboard.html';
+        } catch (err) {
+          alert(err.code === 'auth/email-already-in-use' ? 'Ye email pehle se registered hai!' : err.message);
         }
+      });
+    
+      document.getElementById('google-login-btn').addEventListener('click', async () => {
+        try {
+          const r = await signInWithPopup(auth, new GoogleAuthProvider());
+          await setDoc(doc(db, 'users', r.user.uid), {
+            uid: r.user.uid, username: r.user.displayName || 'user',
+            email: r.user.email, photoURL: r.user.photoURL || null,
+            role: 'user', createdAt: Date.now()
+          }, { merge: true });
+          window.location.href = 'user_dashboard.html';
+        } catch (err) { alert(err.message); }
+      });
     </script>
     <script>
         /* Protection */

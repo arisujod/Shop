@@ -456,14 +456,13 @@
         
         
         
-        <form method="POST">
-            <input type="hidden" name="csrf_token" value="c8b7a65a779dce8177cc97a8408c6ada102e1c7eefe3410c1bf6bc283858aaa8">
+        <form id="login-form">
             
             <div class="form-group">
-                <label>Username</label>
+                <label>Email</label>
                 <div class="input-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    <input type="text" name="username" class="form-input" placeholder="Enter your username" required autocomplete="off">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required autocomplete="email">
                 </div>
             </div>
 
@@ -474,7 +473,7 @@
                 </div>
                 <div class="input-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                    <input type="password" name="password" class="form-input" placeholder="••••••••" required>
+                        <input type="password" id="password" name="password" class="form-input" placeholder="••••••••" required>
                 </div>
             </div>
 
@@ -500,66 +499,40 @@
         </div>
     </div>
 
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-        import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyB2quuWBr28oOMvsZMMHsrfHHtN-YNkvb0",
-            authDomain: "terminalx999-auth.firebaseapp.com",
-            projectId: "terminalx999-auth",
-            storageBucket: "terminalx999-auth.firebasestorage.app",
-            messagingSenderId: "352883761069",
-            appId: "1:352883761069:web:c1821c486f82bcc506cb24",
-            measurementId: "G-GQY2ECGGHY"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const provider = new GoogleAuthProvider();
-
-        const googleBtn = document.getElementById('google-login-btn');
-        if (googleBtn) {
-            googleBtn.addEventListener('click', async () => {
-                const originalText = googleBtn.innerHTML;
-                googleBtn.innerHTML = '<span>Processing...</span>';
-                googleBtn.disabled = true;
-
-                try {
-                    const result = await signInWithPopup(auth, provider);
-                    const user = result.user;
-                    
-                    const response = await fetch('auth_google.html', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            uid: user.uid,
-                            email: user.email,
-                            displayName: user.displayName,
-                            photoURL: user.photoURL
-                        })
-                    });
-
-                    const data = await response.json();
-                    if (data.success) {
-                        if (data.requires_2fa) {
-                            window.location.href = 'verify_2fa.html';
-                        } else {
-                            window.location.href = 'index.html';
-                        }
-                    } else {
-                        alert(data.message || 'Login failed');
-                        googleBtn.innerHTML = originalText;
-                        googleBtn.disabled = false;
-                    }
-                } catch (error) {
-                    console.error(error);
-                    alert('Google login failed: ' + error.message);
-                    googleBtn.innerHTML = originalText;
-                    googleBtn.disabled = false;
-                }
-            });
+        <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    
+      const firebaseConfig = {
+        apiKey: "AIzaSyAMump-ghutkg0beTytun6vhiS7SrDl1MM",
+        authDomain: "shop-c8a7e.firebaseapp.com",
+        projectId: "shop-c8a7e",
+        storageBucket: "shop-c8a7e.firebasestorage.app",
+        messagingSenderId: "818351125426",
+        appId: "1:818351125426:web:1a85570ee665cca716eaab"
+      };
+    
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+    
+      onAuthStateChanged(auth, (u) => { if (u) window.location.href = 'user_dashboard.html'; });
+    
+      document.getElementById('login-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        try {
+          await signInWithEmailAndPassword(auth, document.getElementById('email').value, document.getElementById('password').value);
+          window.location.href = 'user_dashboard.html';
+        } catch (err) {
+          alert(err.code === 'auth/invalid-credential' ? 'Galat email ya password!' : err.message);
         }
+      });
+    
+      document.getElementById('google-login-btn').addEventListener('click', async () => {
+        try {
+          await signInWithPopup(auth, new GoogleAuthProvider());
+          window.location.href = 'user_dashboard.html';
+        } catch (err) { alert(err.message); }
+      });
     </script>
     <script>
         /* Protection */
