@@ -15,9 +15,8 @@
   #logout-btn{background:#ff0033;border:none;font-weight:600}
   .dash-wrap{max-width:700px;margin:3rem auto;padding:0 1rem}
   .profile-card{background:rgba(13,17,23,0.8);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:2.5rem;text-align:center;box-shadow:0 25px 50px -12px rgba(0,0,0,0.5)}
-  .avatar{width:90px;height:90px;border-radius:50%;border:3px solid #ff0033;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;background:rgba(255,0,51,0.15);font-size:2.2rem;font-family:'Outfit';color:#ff0033;overflow:hidden;cursor:pointer;position:relative}
+  .avatar{width:90px;height:90px;border-radius:50%;border:3px solid #ff0033;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;background:rgba(255,0,51,0.15);font-size:2.2rem;font-family:'Outfit';color:#ff0033;overflow:hidden}
   .avatar img{width:100%;height:100%;object-fit:cover}
-  .avatar-edit{position:absolute;bottom:0;right:0;background:#ff0033;border-radius:50%;padding:4px;font-size:12px;cursor:pointer}
   h1{font-family:'Outfit';font-size:1.5rem;margin-bottom:.25rem}
   .email{color:#94a3b8;font-size:.9rem;margin-bottom:1rem}
   .badges{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -59,7 +58,6 @@
   <div id="profile" class="profile-card" style="display:none">
     <div class="avatar" id="avatar">
       <span>P</span>
-      <div class="avatar-edit" title="Change Photo"></div>
     </div>
     <h1 id="disp-name">User</h1>
     <p class="email" id="disp-email">—</p>
@@ -98,7 +96,7 @@
   </div>
 </div>
 
-<!-- Edit Profile Modal -->
+<!-- Edit Profile Modal (Username Only) -->
 <div id="edit-modal" class="modal">
   <div class="modal-content">
     <h2>Edit Profile</h2>
@@ -106,10 +104,7 @@
       <label>Display Name</label>
       <input type="text" id="edit-username" placeholder="Enter username">
     </div>
-    <div class="form-group">
-      <label>Profile Photo URL</label>
-      <input type="text" id="edit-photo" placeholder="Enter image URL (optional)">
-    </div>
+    <p style="font-size:.8rem;color:#94a3b8;margin-bottom:1rem">Profile photo is managed by your Google account and cannot be changed.</p>
     <div class="modal-actions">
       <button class="btn-secondary" onclick="closeModal('edit-modal')">Cancel</button>
       <button class="btn-primary" id="save-profile-btn">Save Changes</button>
@@ -146,7 +141,7 @@
       const snap = await getDoc(doc(db, 'users', user.uid));
       if (snap.exists()) userData = snap.data();
       else {
-        userData = { uid: user.uid, username: user.displayName || 'user', email: user.email, photoURL: user.photoURL || null, role: 'user', createdAt: Date.now() };
+        userData = { uid: user.uid, username: user.displayName || user.email.split('@')[0], email: user.email, photoURL: user.photoURL || null, role: 'user', createdAt: Date.now() };
         await setDoc(doc(db, 'users', user.uid), userData).catch(() => {});
       }
     } catch (e) {}
@@ -160,13 +155,17 @@
       const d = new Date(userData.createdAt);
       document.getElementById('disp-date').innerText = 'Member since ' + d.toLocaleDateString('en-IN', { month: 'short', year: 'numeric' });
     }
-    const av = document.getElementById('avatar').querySelector('span');
+    const av = document.getElementById('avatar');
+    av.innerHTML = ''; // Clear existing
     if (userData.photoURL || user.photoURL) {
       const img = document.createElement('img');
       img.src = userData.photoURL || user.photoURL;
-      av.remove();
-      document.getElementById('avatar').insertBefore(img, document.querySelector('.avatar-edit'));
-    } else av.innerText = (userData.username || user.displayName || 'P').charAt(0).toUpperCase();
+      av.appendChild(img);
+    } else {
+      const span = document.createElement('span');
+      span.innerText = (userData.username || user.displayName || 'P').charAt(0).toUpperCase();
+      av.appendChild(span);
+    }
   });
 
   document.getElementById('logout-btn').addEventListener('click', async () => { await signOut(auth); window.location.href = 'index.html'; });
@@ -174,7 +173,6 @@
   document.getElementById('change-password-btn').addEventListener('click', () => document.getElementById('password-modal').classList.add('active'));
   document.getElementById('edit-profile-btn').addEventListener('click', () => {
     document.getElementById('edit-username').value = userData.username || currentUser.displayName || '';
-    document.getElementById('edit-photo').value = userData.photoURL || '';
     document.getElementById('edit-modal').classList.add('active');
   });
 
@@ -193,22 +191,14 @@
 
   document.getElementById('save-profile-btn').addEventListener('click', async () => {
     const newName = document.getElementById('edit-username').value.trim();
-    const newPhoto = document.getElementById('edit-photo').value.trim();
     if (!newName) return alert('Username cannot be empty');
     try {
-      await updateProfile(currentUser, { displayName: newName, photoURL: newPhoto || null });
-      await setDoc(doc(db, 'users', currentUser.uid), { ...userData, username: newName, photoURL: newPhoto || null }, { merge: true });
+      await updateProfile(currentUser, { displayName: newName });
+      await setDoc(doc(db, 'users', currentUser.uid), { ...userData, username: newName }, { merge: true });
       alert('Profile updated!');
       closeModal('edit-modal');
       window.location.reload();
     } catch (e) { alert(e.message); }
-  });
-
-  document.getElementById('avatar').addEventListener('click', () => {
-    const url = prompt('Enter profile photo URL:', userData.photoURL || '');
-    if (url) {
-      updateProfile(currentUser, { photoURL: url }).then(() => window.location.reload());
-    }
   });
 </script>
 </body>
