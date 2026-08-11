@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard | PRITAM999 Store</title>
+<title>Dashboard | PRITAM999</title>
 <link rel="stylesheet" href="assets/css/core.css">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap');
   body{background:#05070a;color:#f8fafc;font-family:'Inter',sans-serif;min-height:100vh;margin:0}
   .dash-nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 5%;border-bottom:1px solid rgba(255,255,255,0.08);background:rgba(13,17,23,0.75);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100}
   .brand{font-family:'Outfit';font-weight:800;font-size:1.2rem;color:#fff;text-decoration:none}
@@ -52,7 +51,7 @@
     </div>
     <div class="stats">
       <div class="stat"><b>0</b><span>Orders</span></div>
-      <div class="stat"><b>₹0</b><span>Spent</span></div>
+      <div class="stat"><b>0</b><span>Spent</span></div>
       <div class="stat"><b>0</b><span>Referrals</span></div>
     </div>
   </div>
@@ -61,7 +60,7 @@
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
   import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+  import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyAMump-ghutkg0beTytun6vhiS7SrDl1MM",
@@ -81,7 +80,12 @@
     let data = {};
     try {
       const snap = await getDoc(doc(db, 'users', user.uid));
-      if (snap.exists()) data = snap.data();
+      if (snap.exists()) {
+        data = snap.data();
+      } else {
+        data = { uid: user.uid, username: user.displayName || 'user', email: user.email, photoURL: user.photoURL || null, role: 'user', createdAt: Date.now() };
+        await setDoc(doc(db, 'users', user.uid), data).catch(() => {});
+      }
     } catch (e) {}
     document.getElementById('loading').style.display = 'none';
     document.getElementById('profile').style.display = 'block';
@@ -90,10 +94,10 @@
     document.getElementById('disp-role').innerText = (data.role || 'user').toUpperCase();
     if (data.createdAt) {
       const d = new Date(data.createdAt);
-      document.getElementById('disp-date').innerText = 'Member since ' + d.toLocaleDateString('en-IN', {month:'short', year:'numeric'});
+      document.getElementById('disp-date').innerText = 'Member since ' + d.toLocaleDateString('en-IN', { month: 'short', year: 'numeric' });
     }
     const av = document.getElementById('avatar');
-    if (user.photoURL) av.innerHTML = '<img src="'+user.photoURL+'" alt="avatar">';
+    if (data.photoURL || user.photoURL) av.innerHTML = '<img src="' + (data.photoURL || user.photoURL) + '" alt="avatar">';
     else av.innerText = (data.username || user.displayName || 'P').charAt(0).toUpperCase();
   });
 
