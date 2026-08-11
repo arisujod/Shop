@@ -520,37 +520,28 @@
   const auth = getAuth(app);
   const db = getFirestore(app);
 
-  getRedirectResult(auth).then(async (r) => {
-    if (r && r.user) {
-      await setDoc(doc(db, 'users', r.user.uid), {
-        uid: r.user.uid, username: r.user.displayName || 'user',
-        email: r.user.email, photoURL: r.user.photoURL || null,
-        role: 'user', createdAt: Date.now()
-      }, { merge: true });
-      window.location.href = 'user_dashboard.html';
-    }
-  }).catch(e => alert(e.message));
+// Google sign-in handler
+getRedirectResult(auth).then(async(r)=>{
+  if(r&&r.user){
+    // Auto-create username from Google account
+    const username = r.user.displayName || r.user.email.split('@')[0];
+    await setDoc(doc(db,'users',r.user.uid),{
+      uid: r.user.uid,
+      username: username,
+      email: r.user.email,
+      photoURL: r.user.photoURL || null,
+      role: 'user',
+      createdAt: Date.now()
+    },{merge: true});
+    window.location.href='user_dashboard.html';
+  }
+}).catch(e=>alert(e.message));
 
-  document.getElementById('register-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const username = document.getElementById('username').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const pass = document.getElementById('password').value;
-    if (username.length < 3) return alert('Username kam se kam 3 characters!');
-    if (pass.length < 6) return alert('Password kam se kam 6 characters!');
-    try {
-      const cred = await createUserWithEmailAndPassword(auth, email, pass);
-      await updateProfile(cred.user, { displayName: username });
-      await setDoc(doc(db, 'users', cred.user.uid), {
-        uid: cred.user.uid, username, email,
-        refCode: document.getElementById('ref').value.trim() || null,
-        role: 'user', createdAt: Date.now()
-      });
-      window.location.href = 'user_dashboard.html';
-    } catch (err) {
-      alert(err.code === 'auth/email-already-in-use' ? 'Ye email pehle se registered hai!' : err.message);
-    }
-  });
+document.getElementById('google-login-btn').addEventListener('click',()=>{
+  signInWithRedirect(auth,new GoogleAuthProvider());
+});
+
+     
 
   document.getElementById('google-login-btn').addEventListener('click', () => {
     signInWithRedirect(auth, new GoogleAuthProvider());
