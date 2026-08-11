@@ -507,7 +507,7 @@ window.forgotPassword = async () => {
   const auth = getAuth();
   try {
     await sendPasswordResetEmail(auth, email);
-    alert('Password reset email sent! Check your inbox.');
+    alert('Password reset email sent! Check your inbox (and spam folder).');
   } catch (e) {
     alert(e.code === 'auth/user-not-found' ? 'No account found with this email' : e.message);
   }
