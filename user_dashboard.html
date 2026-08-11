@@ -15,19 +15,34 @@
   #logout-btn{background:#ff0033;border:none;font-weight:600}
   .dash-wrap{max-width:700px;margin:3rem auto;padding:0 1rem}
   .profile-card{background:rgba(13,17,23,0.8);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:2.5rem;text-align:center;box-shadow:0 25px 50px -12px rgba(0,0,0,0.5)}
-  .avatar{width:90px;height:90px;border-radius:50%;border:3px solid #ff0033;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;background:rgba(255,0,51,0.15);font-size:2.2rem;font-family:'Outfit';color:#ff0033;overflow:hidden}
+  .avatar{width:90px;height:90px;border-radius:50%;border:3px solid #ff0033;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;background:rgba(255,0,51,0.15);font-size:2.2rem;font-family:'Outfit';color:#ff0033;overflow:hidden;cursor:pointer;position:relative}
   .avatar img{width:100%;height:100%;object-fit:cover}
+  .avatar-edit{position:absolute;bottom:0;right:0;background:#ff0033;border-radius:50%;padding:4px;font-size:12px;cursor:pointer}
   h1{font-family:'Outfit';font-size:1.5rem;margin-bottom:.25rem}
   .email{color:#94a3b8;font-size:.9rem;margin-bottom:1rem}
   .badges{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
   .badge{padding:.25rem .75rem;border-radius:2rem;font-size:.7rem;font-weight:700;text-transform:uppercase}
   .badge-role{background:rgba(255,0,51,0.15);color:#ff0033;border:1px solid rgba(255,0,51,0.3)}
   .badge-date{background:rgba(34,197,94,0.1);color:#22c55e;border:1px solid rgba(34,197,94,0.2)}
-  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-bottom:1.5rem}
   .stat{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:1rem}
   .stat b{display:block;font-family:'Outfit';font-size:1.2rem;color:#fff}
   .stat span{font-size:.7rem;color:#94a3b8;text-transform:uppercase}
+  .actions{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+  .action-btn{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;padding:1rem;border-radius:12px;font-size:.85rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:all .3s}
+  .action-btn:hover{background:rgba(255,255,255,0.1);transform:translateY(-2px)}
   .loading{color:#94a3b8;text-align:center;padding:4rem}
+  .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:1000;align-items:center;justify-content:center}
+  .modal.active{display:flex}
+  .modal-content{background:#0d1117;border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:2rem;max-width:400px;width:90%}
+  .modal-content h2{margin-bottom:1.5rem;font-family:'Outfit'}
+  .form-group{margin-bottom:1rem}
+  .form-group label{display:block;margin-bottom:.5rem;color:#94a3b8;font-size:.85rem}
+  .form-group input{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:.75rem;color:#fff}
+  .modal-actions{display:flex;gap:.75rem;margin-top:1.5rem}
+  .modal-actions button{flex:1;padding:.75rem;border:none;border-radius:8px;cursor:pointer;font-weight:600}
+  .btn-primary{background:#ff0033;color:#fff}
+  .btn-secondary{background:rgba(255,255,255,0.1);color:#fff}
 </style>
 </head>
 <body>
@@ -42,7 +57,10 @@
 <div class="dash-wrap">
   <div id="loading" class="loading">Loading profile...</div>
   <div id="profile" class="profile-card" style="display:none">
-    <div class="avatar" id="avatar">P</div>
+    <div class="avatar" id="avatar">
+      <span>P</span>
+      <div class="avatar-edit" title="Change Photo"></div>
+    </div>
     <h1 id="disp-name">User</h1>
     <p class="email" id="disp-email">—</p>
     <div class="badges">
@@ -50,16 +68,58 @@
       <span class="badge badge-date" id="disp-date">Member</span>
     </div>
     <div class="stats">
-      <div class="stat"><b>0</b><span>Orders</span></div>
-      <div class="stat"><b>0</b><span>Spent</span></div>
-      <div class="stat"><b>0</b><span>Referrals</span></div>
+      <div class="stat"><b id="stat-orders">0</b><span>Orders</span></div>
+      <div class="stat"><b id="stat-spent">₹0</b><span>Spent</span></div>
+      <div class="stat"><b id="stat-referrals">0</b><span>Referrals</span></div>
+    </div>
+    <div class="actions">
+      <button class="action-btn" id="change-password-btn">🔐 Change Password</button>
+      <button class="action-btn" id="edit-profile-btn">✏️ Edit Profile</button>
+    </div>
+  </div>
+</div>
+
+<!-- Password Change Modal -->
+<div id="password-modal" class="modal">
+  <div class="modal-content">
+    <h2>Change Password</h2>
+    <div class="form-group">
+      <label>Current Password</label>
+      <input type="password" id="current-pass" placeholder="Enter current password">
+    </div>
+    <div class="form-group">
+      <label>New Password</label>
+      <input type="password" id="new-pass" placeholder="Enter new password (min 6 characters)">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-secondary" onclick="closeModal('password-modal')">Cancel</button>
+      <button class="btn-primary" id="update-password-btn">Update Password</button>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Profile Modal -->
+<div id="edit-modal" class="modal">
+  <div class="modal-content">
+    <h2>Edit Profile</h2>
+    <div class="form-group">
+      <label>Display Name</label>
+      <input type="text" id="edit-username" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+      <label>Profile Photo URL</label>
+      <input type="text" id="edit-photo" placeholder="Enter image URL (optional)">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-secondary" onclick="closeModal('edit-modal')">Cancel</button>
+      <button class="btn-primary" id="save-profile-btn">Save Changes</button>
     </div>
   </div>
 </div>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  import { getAuth, onAuthStateChanged, signOut, updateProfile, updatePassword, EmailAuthProvider, reauthenticateWithCredential } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
   import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
   const firebaseConfig = {
@@ -74,36 +134,81 @@
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   const db = getFirestore(app);
+  let currentUser = null;
+  let userData = {};
+
+  window.closeModal = (id) => document.getElementById(id).classList.remove('active');
 
   onAuthStateChanged(auth, async (user) => {
     if (!user) { window.location.href = 'login.html'; return; }
-    let data = {};
+    currentUser = user;
     try {
       const snap = await getDoc(doc(db, 'users', user.uid));
-      if (snap.exists()) {
-        data = snap.data();
-      } else {
-        data = { uid: user.uid, username: user.displayName || 'user', email: user.email, photoURL: user.photoURL || null, role: 'user', createdAt: Date.now() };
-        await setDoc(doc(db, 'users', user.uid), data).catch(() => {});
+      if (snap.exists()) userData = snap.data();
+      else {
+        userData = { uid: user.uid, username: user.displayName || 'user', email: user.email, photoURL: user.photoURL || null, role: 'user', createdAt: Date.now() };
+        await setDoc(doc(db, 'users', user.uid), userData).catch(() => {});
       }
     } catch (e) {}
+    
     document.getElementById('loading').style.display = 'none';
     document.getElementById('profile').style.display = 'block';
-    document.getElementById('disp-name').innerText = data.username || user.displayName || 'User';
+    document.getElementById('disp-name').innerText = userData.username || user.displayName || 'User';
     document.getElementById('disp-email').innerText = user.email || 'No email';
-    document.getElementById('disp-role').innerText = (data.role || 'user').toUpperCase();
-    if (data.createdAt) {
-      const d = new Date(data.createdAt);
+    document.getElementById('disp-role').innerText = (userData.role || 'user').toUpperCase();
+    if (userData.createdAt) {
+      const d = new Date(userData.createdAt);
       document.getElementById('disp-date').innerText = 'Member since ' + d.toLocaleDateString('en-IN', { month: 'short', year: 'numeric' });
     }
-    const av = document.getElementById('avatar');
-    if (data.photoURL || user.photoURL) av.innerHTML = '<img src="' + (data.photoURL || user.photoURL) + '" alt="avatar">';
-    else av.innerText = (data.username || user.displayName || 'P').charAt(0).toUpperCase();
+    const av = document.getElementById('avatar').querySelector('span');
+    if (userData.photoURL || user.photoURL) {
+      const img = document.createElement('img');
+      img.src = userData.photoURL || user.photoURL;
+      av.remove();
+      document.getElementById('avatar').insertBefore(img, document.querySelector('.avatar-edit'));
+    } else av.innerText = (userData.username || user.displayName || 'P').charAt(0).toUpperCase();
   });
 
-  document.getElementById('logout-btn').addEventListener('click', async () => {
-    await signOut(auth);
-    window.location.href = 'index.html';
+  document.getElementById('logout-btn').addEventListener('click', async () => { await signOut(auth); window.location.href = 'index.html'; });
+
+  document.getElementById('change-password-btn').addEventListener('click', () => document.getElementById('password-modal').classList.add('active'));
+  document.getElementById('edit-profile-btn').addEventListener('click', () => {
+    document.getElementById('edit-username').value = userData.username || currentUser.displayName || '';
+    document.getElementById('edit-photo').value = userData.photoURL || '';
+    document.getElementById('edit-modal').classList.add('active');
+  });
+
+  document.getElementById('update-password-btn').addEventListener('click', async () => {
+    const current = document.getElementById('current-pass').value;
+    const newPass = document.getElementById('new-pass').value;
+    if (newPass.length < 6) return alert('Password must be at least 6 characters');
+    try {
+      const credential = EmailAuthProvider.credential(currentUser.email, current);
+      await reauthenticateWithCredential(currentUser, credential);
+      await updatePassword(currentUser, newPass);
+      alert('Password updated successfully!');
+      closeModal('password-modal');
+    } catch (e) { alert(e.code === 'auth/wrong-password' ? 'Current password is wrong' : e.message); }
+  });
+
+  document.getElementById('save-profile-btn').addEventListener('click', async () => {
+    const newName = document.getElementById('edit-username').value.trim();
+    const newPhoto = document.getElementById('edit-photo').value.trim();
+    if (!newName) return alert('Username cannot be empty');
+    try {
+      await updateProfile(currentUser, { displayName: newName, photoURL: newPhoto || null });
+      await setDoc(doc(db, 'users', currentUser.uid), { ...userData, username: newName, photoURL: newPhoto || null }, { merge: true });
+      alert('Profile updated!');
+      closeModal('edit-modal');
+      window.location.reload();
+    } catch (e) { alert(e.message); }
+  });
+
+  document.getElementById('avatar').addEventListener('click', () => {
+    const url = prompt('Enter profile photo URL:', userData.photoURL || '');
+    if (url) {
+      updateProfile(currentUser, { photoURL: url }).then(() => window.location.reload());
+    }
   });
 </script>
 </body>
